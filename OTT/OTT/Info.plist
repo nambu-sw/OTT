@@ -21,5 +21,12 @@
 			</array>
 		</dict>
 	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Alegreya-Regular</string>
+		<string>Alegreya-Bold</string>
+		<string>NotoSerifKR-Regular</string>
+		<string>NotoSerifKR-Bold</string>
+	</array>
 </dict>
 </plist>

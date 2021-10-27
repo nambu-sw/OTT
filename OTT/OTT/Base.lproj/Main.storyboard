@@ -3,12 +3,19 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="NotoSerifKR-Bold.otf">
+            <string>NotoSerifKR-Bold</string>
+        </array>
+        <array key="NotoSerifKR-Regular.otf">
+            <string>NotoSerifKR-Regular</string>
+        </array>
         <array key="TimesNewRoman.ttf">
             <string>.SFUI-Regular</string>
         </array>
@@ -90,28 +97,21 @@
                                     <outlet property="ibCalendarDelegate" destination="BYZ-38-t0r" id="j1t-6l-YiV"/>
                                 </connections>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPQ-ce-V18">
-                                <rect key="frame" x="83.5" y="662" width="247" height="48"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPQ-ce-V18">
+                                <rect key="frame" x="56" y="631" width="302" height="103"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="247" id="JOa-D6-JMk"/>
+                                    <constraint firstAttribute="width" constant="302" id="JOa-D6-JMk"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" image="UploadClothesButton" imagePadding="0.0">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                <buttonConfiguration key="configuration" style="filled" title="UPLOAD CLOTHES">
+                                    <backgroundConfiguration key="background" cornerRadius="10">
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name=".SFUI-Regular" family=".AppleSystemUIFont" pointSize="35"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="JSK-sG-Mpk" kind="presentation" modalPresentationStyle="fullScreen" id="WBB-ll-gq0"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zwg-kA-cHw">
-                                <rect key="frame" x="131" y="782" width="153" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="5kV-O0-J3h"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" image="MyCloset-1"/>
-                                <connections>
-                                    <segue destination="C3q-Dc-bNx" kind="presentation" modalPresentationStyle="fullScreen" id="6JK-Ci-khP"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MONTHLY lOOK Calendar" translatesAutoresizingMaskIntoConstraints="NO" id="yne-rb-v6b">
@@ -215,6 +215,22 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zwg-kA-cHw">
+                                <rect key="frame" x="56" y="742" width="302" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="108" id="5kV-O0-J3h"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="MY CLOSET">
+                                    <backgroundConfiguration key="background" cornerRadius="10">
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name=".SFUI-Regular" family=".AppleSystemUIFont" pointSize="35"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="C3q-Dc-bNx" kind="presentation" modalPresentationStyle="fullScreen" id="6JK-Ci-khP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -224,14 +240,14 @@
                             <constraint firstItem="TdS-4A-xTL" firstAttribute="leading" secondItem="nLa-LT-mH2" secondAttribute="leading" id="9ee-Ut-0HV"/>
                             <constraint firstItem="nLa-LT-mH2" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="AJy-WO-Rt4"/>
                             <constraint firstItem="nLa-LT-mH2" firstAttribute="centerX" secondItem="Zwg-kA-cHw" secondAttribute="centerX" id="ATQ-Wa-xTW"/>
-                            <constraint firstItem="Zwg-kA-cHw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="131" id="BaM-Iu-3oX"/>
+                            <constraint firstItem="Zwg-kA-cHw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="56" id="BaM-Iu-3oX"/>
                             <constraint firstItem="lzj-lr-wKc" firstAttribute="centerX" secondItem="MPQ-ce-V18" secondAttribute="centerX" id="HB1-G1-8gD"/>
                             <constraint firstItem="nLa-LT-mH2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="JN6-z7-hgq"/>
-                            <constraint firstItem="MPQ-ce-V18" firstAttribute="top" secondItem="nLa-LT-mH2" secondAttribute="bottom" constant="39" id="Rlc-4x-zcy"/>
+                            <constraint firstItem="MPQ-ce-V18" firstAttribute="top" secondItem="nLa-LT-mH2" secondAttribute="bottom" constant="8" id="Rlc-4x-zcy"/>
                             <constraint firstItem="TdS-4A-xTL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="6" id="Sjc-wa-WyT"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Zwg-kA-cHw" secondAttribute="bottom" constant="49" id="VSW-2Q-6ed"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Zwg-kA-cHw" secondAttribute="bottom" constant="12" id="VSW-2Q-6ed"/>
                             <constraint firstItem="nLa-LT-mH2" firstAttribute="centerX" secondItem="MPQ-ce-V18" secondAttribute="centerX" id="bAV-A3-WSc"/>
-                            <constraint firstItem="Zwg-kA-cHw" firstAttribute="top" secondItem="MPQ-ce-V18" secondAttribute="bottom" constant="72" id="t6g-tT-rA6"/>
+                            <constraint firstItem="Zwg-kA-cHw" firstAttribute="top" secondItem="MPQ-ce-V18" secondAttribute="bottom" constant="8" id="t6g-tT-rA6"/>
                             <constraint firstItem="nLa-LT-mH2" firstAttribute="width" secondItem="lzj-lr-wKc" secondAttribute="width" id="tna-1n-KY4"/>
                             <constraint firstItem="nLa-LT-mH2" firstAttribute="top" secondItem="lzj-lr-wKc" secondAttribute="bottom" id="w96-WM-73Z"/>
                             <constraint firstItem="yne-rb-v6b" firstAttribute="top" secondItem="TdS-4A-xTL" secondAttribute="bottom" constant="8" id="x6x-5F-3yI"/>
@@ -243,7 +259,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="103" y="-7"/>
+            <point key="canvasLocation" x="102.89855072463769" y="-7.3660714285714279"/>
         </scene>
         <!--Category View Controller-->
         <scene sceneID="hy1-CV-tul">
@@ -253,16 +269,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3u-pw-wzr">
-                                <rect key="frame" x="24" y="738" width="367" height="124"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="UploadClothesButton"/>
-                            </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0eV-5Y-fqo">
-                                <rect key="frame" x="47" y="200" width="320" height="530"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0eV-5Y-fqo">
+                                <rect key="frame" x="52" y="215" width="320" height="496"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="479" id="6rB-bQ-aKw"/>
+                                    <constraint firstAttribute="height" constant="496" id="6rB-bQ-aKw"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="50" id="UcB-OU-KJJ">
@@ -281,7 +292,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Category" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SnM-tR-BBS">
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Category" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SnM-tR-BBS">
                                                     <rect key="frame" x="92" y="11" width="217" height="28"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="NotoSerifKR-Regular" family="Noto Serif KR" pointSize="23"/>
@@ -327,17 +338,38 @@
                                     <constraint firstAttribute="height" constant="120" id="OV4-aZ-l9K"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16f-X8-uhW">
+                                <rect key="frame" x="24" y="52" width="46" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="chevron.backward" catalog="system" symbolScale="large"/>
+                                    <backgroundConfiguration key="background" cornerRadius="10"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3u-pw-wzr">
+                                <rect key="frame" x="64" y="744" width="287" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="UPLOAD CLOTHES">
+                                    <backgroundConfiguration key="background" cornerRadius="10">
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name=".SFUI-Regular" family=".AppleSystemUIFont" pointSize="35"/>
+                                    <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="N2h-S7-Za5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Cbk-32-qi6" firstAttribute="leading" secondItem="JjD-Za-U9B" secondAttribute="leadingMargin" id="Sj6-CL-ZIH"/>
                             <constraint firstItem="Cbk-32-qi6" firstAttribute="top" secondItem="N2h-S7-Za5" secondAttribute="top" constant="43" id="Ygy-c7-FDL"/>
-                            <constraint firstItem="0eV-5Y-fqo" firstAttribute="centerX" secondItem="y3u-pw-wzr" secondAttribute="centerX" id="l9S-C3-uBp"/>
-                            <constraint firstItem="0eV-5Y-fqo" firstAttribute="centerX" secondItem="JjD-Za-U9B" secondAttribute="centerX" id="uUy-CR-RaT"/>
-                            <constraint firstItem="0eV-5Y-fqo" firstAttribute="centerY" secondItem="JjD-Za-U9B" secondAttribute="centerY" constant="-14.5" id="wGg-Ve-03W"/>
-                            <constraint firstItem="0eV-5Y-fqo" firstAttribute="leading" secondItem="N2h-S7-Za5" secondAttribute="leading" constant="47" id="xsl-zc-spX"/>
-                            <constraint firstItem="y3u-pw-wzr" firstAttribute="top" secondItem="0eV-5Y-fqo" secondAttribute="bottom" constant="32" id="yAo-Wb-frC"/>
+                            <constraint firstItem="0eV-5Y-fqo" firstAttribute="centerX" secondItem="JjD-Za-U9B" secondAttribute="centerX" constant="5" id="uUy-CR-RaT"/>
+                            <constraint firstItem="0eV-5Y-fqo" firstAttribute="centerY" secondItem="JjD-Za-U9B" secondAttribute="centerY" constant="15" id="wGg-Ve-03W"/>
+                            <constraint firstItem="0eV-5Y-fqo" firstAttribute="leading" secondItem="N2h-S7-Za5" secondAttribute="leading" constant="52" id="xsl-zc-spX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fLo-al-eGV"/>
@@ -347,7 +379,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="33F-IT-mKD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="103" y="750"/>
+            <point key="canvasLocation" x="102.89855072463769" y="750"/>
         </scene>
         <!--Clothes View Controller-->
         <scene sceneID="gtG-rH-6wd">
@@ -394,12 +426,6 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="UploadClothesButton" title=""/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Zhc-Nr-mlW">
-                                <rect key="frame" x="56" y="206" width="148" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" image="CaregoryButton"/>
-                            </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="kpj-Pg-s7i">
                                 <rect key="frame" x="19" y="233" width="377" height="479"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" sectionInsetReference="layoutMargins" id="BXE-eG-afY">
@@ -428,7 +454,7 @@
                                                     <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
                                                 </button>
                                                 <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ImageLine" translatesAutoresizingMaskIntoConstraints="NO" id="zeZ-Yz-CsI">
-                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                    <rect key="frame" x="-7" y="-4" width="135" height="136"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
@@ -438,6 +464,22 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Zhc-Nr-mlW">
+                                <rect key="frame" x="52" y="195" width="148" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="CaregoryButton"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcs-u1-Efm">
+                                <rect key="frame" x="27" y="44" width="46" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="chevron.backward" catalog="system" symbolScale="large"/>
+                                    <backgroundConfiguration key="background" cornerRadius="10"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4Fx-lg-Jvs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -467,42 +509,43 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ImageViewLine" translatesAutoresizingMaskIntoConstraints="NO" id="JdT-oc-uFs">
-                                <rect key="frame" x="0.0" y="195" width="414" height="314"/>
+                                <rect key="frame" x="0.0" y="239" width="414" height="314"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axW-EK-las">
-                                <rect key="frame" x="85" y="531" width="127" height="54"/>
+                                <rect key="frame" x="41" y="561" width="215" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" image="Component 7" title=""/>
+                                <buttonConfiguration key="configuration" style="filled" title="UPLOAD CLOTHES">
+                                    <backgroundConfiguration key="background" cornerRadius="10">
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name=".SFUI-Regular" family=".AppleSystemUIFont" pointSize="27"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="uploadImage:" destination="JSK-sG-Mpk" eventType="touchUpInside" id="Beh-QS-kjt"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" background="Rectangle 15" translatesAutoresizingMaskIntoConstraints="NO" id="KP4-qP-LBN">
-                                <rect key="frame" x="41" y="675" width="321" height="160"/>
+                                <rect key="frame" x="41" y="702" width="321" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="설명추가문" translatesAutoresizingMaskIntoConstraints="NO" id="9pA-t3-uhP">
-                                <rect key="frame" x="50" y="675" width="197" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="UPLAOD CLOTHES" translatesAutoresizingMaskIntoConstraints="NO" id="stw-ez-PhJ">
-                                <rect key="frame" x="108" y="87" width="187" height="100"/>
+                                <rect key="frame" x="114" y="120" width="187" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnm-t0-Pp8">
-                                <rect key="frame" x="276" y="531" width="86" height="89"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnm-t0-Pp8">
+                                <rect key="frame" x="264" y="561" width="98" height="133"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="PlusButton"/>
                             </button>
                             <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5PB-XE-JjW">
-                                <rect key="frame" x="41" y="610" width="215" height="57"/>
+                                <rect key="frame" x="41" y="637" width="215" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="labelColor"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <inset key="contentEdgeInsets" minX="100" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -518,8 +561,10 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <buttonConfiguration key="configuration" style="plain" title="Category">
-                                    <backgroundConfiguration key="background" strokeOutset="11"/>
-                                    <fontDescription key="titleFontDescription" name="NotoSerifKR-ExtraLight" family="Noto Serif KR" pointSize="30"/>
+                                    <backgroundConfiguration key="background" cornerRadius="10" strokeOutset="11">
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name=".SFUI-Regular" family=".AppleSystemUIFont" pointSize="30"/>
                                     <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -527,9 +572,26 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LineImage" translatesAutoresizingMaskIntoConstraints="NO" id="qeN-uE-oLh">
-                                <rect key="frame" x="20" y="59" width="362" height="20"/>
+                                <rect key="frame" x="20" y="92" width="362" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCd-kk-PCp">
+                                <rect key="frame" x="28" y="58" width="46" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="chevron.backward" catalog="system" symbolScale="large"/>
+                                    <backgroundConfiguration key="background" cornerRadius="10"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&lt;!&gt; 설명을 추가해 주세요." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5wh-Z6-lfp">
+                                <rect key="frame" x="58" y="702" width="120" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="NotoSerifKR-Bold" family="Noto Serif KR" pointSize="10"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HPn-oo-9nJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -552,24 +614,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="STYLIST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n9e-XV-CB8">
-                                <rect key="frame" x="35" y="96" width="243" height="84"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="STYLIST" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fm-3s-qkH">
+                                <rect key="frame" x="40" y="102" width="226" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Alegreya-Regular" family="Alegreya" pointSize="61"/>
+                                <fontDescription key="fontDescription" name=".SFUI-Regular" family=".AppleSystemUIFont" pointSize="52"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LineImage" translatesAutoresizingMaskIntoConstraints="NO" id="mOB-Br-lH0">
-                                <rect key="frame" x="20" y="64" width="394" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dday" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4DG-XJ-42m">
+                                <rect key="frame" x="40" y="160" width="237" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ImageLine" translatesAutoresizingMaskIntoConstraints="NO" id="PQf-Gn-wNc">
+                                <rect key="frame" x="32" y="205" width="334" height="329"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fm-3s-qkH">
-                                <rect key="frame" x="28" y="188" width="236" height="49"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LineImage" translatesAutoresizingMaskIntoConstraints="NO" id="xkd-GV-7t9">
+                                <rect key="frame" x="32" y="74" width="362" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BigLogo" translatesAutoresizingMaskIntoConstraints="NO" id="BpZ-Qb-Cc4">
+                                <rect key="frame" x="274" y="86" width="107" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" background="Rectangle 15" translatesAutoresizingMaskIntoConstraints="NO" id="Nzd-3Z-tGU">
+                                <rect key="frame" x="40" y="542" width="321" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HhP-Qo-aVY">
+                                <rect key="frame" x="40" y="44" width="38" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system" title="">
+                                    <backgroundConfiguration key="background" cornerRadius="10"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPH-AZ-1vC">
+                                <rect key="frame" x="41" y="710" width="320" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Change">
+                                    <backgroundConfiguration key="background" cornerRadius="20">
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name=".SFUI-Regular" family=".AppleSystemUIFont" pointSize="49"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="K0X-gE-oOf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -577,7 +674,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jrL-Ih-MWJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-113.04347826086958" y="-751.33928571428567"/>
+            <point key="canvasLocation" x="444.92753623188412" y="-741.29464285714278"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="orE-dB-LTS">
@@ -587,7 +684,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="로딩 옷장 image" translatesAutoresizingMaskIntoConstraints="NO" id="kiI-NT-D3w">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="로딩 옷장 image" translatesAutoresizingMaskIntoConstraints="NO" id="kiI-NT-D3w">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -613,20 +710,72 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bHW-2U-kLG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1275" y="414"/>
+            <point key="canvasLocation" x="-983" y="-7"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="QrO-g3-iuE">
+            <objects>
+                <viewController id="vfC-lV-1SE" customClass="OOTDViewController" customModule="OTT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IDa-jq-8Cz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="STYLIST" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nth-wZ-neT">
+                                <rect key="frame" x="40" y="102" width="226" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".SFUI-Regular" family=".AppleSystemUIFont" pointSize="52"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dday" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxa-MS-znr">
+                                <rect key="frame" x="40" y="160" width="237" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ImageLine" translatesAutoresizingMaskIntoConstraints="NO" id="92R-4n-kq1">
+                                <rect key="frame" x="32" y="205" width="334" height="329"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LineImage" translatesAutoresizingMaskIntoConstraints="NO" id="Tad-ys-dYt">
+                                <rect key="frame" x="32" y="74" width="362" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UST-NA-oFD">
+                                <rect key="frame" x="40" y="44" width="38" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system" title="">
+                                    <backgroundConfiguration key="background" cornerRadius="10"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJd-Rc-YPO">
+                                <rect key="frame" x="295" y="112" width="48" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus.circle" catalog="system"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HbL-Lp-Tgt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="amV-JC-ZMz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-549.27536231884062" y="-713.16964285714278"/>
         </scene>
     </scenes>
     <resources>
         <image name="BigLogo" width="139" height="216"/>
         <image name="CaregoryButton" width="227" height="46"/>
-        <image name="Component 7" width="224" height="86"/>
         <image name="ImageLine" width="100" height="95"/>
         <image name="ImageViewLine" width="338" height="321"/>
         <image name="LOGO_CA 3" width="375" height="172"/>
         <image name="Line 4" width="251" height="1"/>
         <image name="LineImage" width="362" height="18"/>
         <image name="MONTHLY lOOK Calendar" width="218" height="92"/>
-        <image name="MyCloset-1" width="315" height="110"/>
         <image name="PlusButton" width="62" height="75"/>
         <image name="Rectangle 15" width="326" height="132"/>
         <image name="UPLAOD CLOTHES" width="200" height="98"/>
@@ -634,9 +783,9 @@
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="chevron.forward" catalog="system" width="96" height="128"/>
         <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
         <image name="tshirt" catalog="system" width="128" height="99"/>
-        <image name="로딩 옷장 image" width="294" height="667"/>
-        <image name="설명추가문" width="441" height="28"/>
+        <image name="로딩 옷장 image" width="294" height="667"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -21,7 +21,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="로딩 옷장 image" translatesAutoresizingMaskIntoConstraints="NO" id="z8T-GZ-AtK">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="로딩 옷장 image" translatesAutoresizingMaskIntoConstraints="NO" id="z8T-GZ-AtK">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -46,6 +46,6 @@
     </scenes>
     <resources>
         <image name="BigLogo" width="139" height="216"/>
-        <image name="로딩 옷장 image" width="294" height="667"/>
+        <image name="로딩 옷장 image" width="294" height="667"/>
     </resources>
 </document>
