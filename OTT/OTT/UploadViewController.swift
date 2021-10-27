@@ -18,6 +18,11 @@ class UploadViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        categoryBtn.layer.shadowColor = UIColor.gray.cgColor
+        categoryBtn.layer.shadowOpacity = 1.0
+        categoryBtn.layer.shadowOffset = CGSize.zero
+        categoryBtn.layer.shadowRadius = 6
+        categoryBtn.layer.cornerRadius = 10
 
         picker.delegate = self
     }

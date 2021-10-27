@@ -21,7 +21,5 @@
 			</array>
 		</dict>
 	</dict>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>사용자의 포토 라이브러리에서 옷 이미지를 불러오려고 합니다. 허용하시겠습니까?</string>
 </dict>
 </plist>

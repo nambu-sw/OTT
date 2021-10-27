@@ -389,6 +389,8 @@
 				DEVELOPMENT_TEAM = YTXF6JL62P;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OTT/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OTT;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "사용자의 포토 라이브러리에서 옷 이미지를 불러오려고 합니다. 허용하시겠습니까?";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -418,6 +420,8 @@
 				DEVELOPMENT_TEAM = YTXF6JL62P;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OTT/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OTT;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "사용자의 포토 라이브러리에서 옷 이미지를 불러오려고 합니다. 허용하시겠습니까?";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
