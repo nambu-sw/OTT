@@ -12,8 +12,6 @@ class MainViewController: UIViewController {
     
     @IBOutlet var calendarView: JTACMonthView!
     
-    @IBOutlet weak var monthLabel: UILabel!
-    
     let testCalendar = Calendar(identifier: .gregorian)
     var calendarDataSource: [String:String] = [:]
     var formatter: DateFormatter {
@@ -158,7 +156,7 @@ extension MainViewController: JTACMonthViewDelegate {
     // 헤더
     func calendar(_ calendar: JTACMonthView, headerViewForDateRange range: (start: Date, end: Date), at indexPath: IndexPath) -> JTACMonthReusableView {
         let formatter = DateFormatter()  // Declare this outside, to avoid instancing this heavy class multiple times.
-        formatter.dateFormat = "MMMM"
+        formatter.dateFormat = "MMMM yyyy"
 
         let header = calendar.dequeueReusableJTAppleSupplementaryView(withReuseIdentifier: "DateHeader", for: indexPath) as! DateHeader
         header.monthTitle.text = formatter.string(from: range.start)
@@ -167,13 +165,7 @@ extension MainViewController: JTACMonthViewDelegate {
     }
 
     func calendarSizeForMonths(_ calendar: JTACMonthView?) -> MonthSize? {
-        return MonthSize(defaultSize: 100)
-    }
-    
-    func calendar(_ calendar: JTACMonthView, didScrollToDateSegmentWith visibleDates: DateSegmentInfo) {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy"
-        monthLabel.text = dateFormatter.string(from: visibleDates.monthDates.first!.date)
+        return MonthSize(defaultSize: 1)
     }
     
 }

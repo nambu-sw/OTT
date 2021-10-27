@@ -1,20 +1,28 @@
 PODS:
+  - Alamofire (5.4.4)
   - DropDown (2.3.13)
   - JTAppleCalendar (8.0.3)
+  - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
+  - Alamofire
   - DropDown
   - JTAppleCalendar
+  - SwiftyJSON
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - DropDown
     - JTAppleCalendar
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
   DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
   JTAppleCalendar: 932cadea40b1051beab10f67843451d48ba16c99
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 7b0141c0ad149b69bbd6583edd397c926a6eeca4
+PODFILE CHECKSUM: e367cc93978f537a55b52349f8aa0a5902420e01
 
 COCOAPODS: 1.11.2

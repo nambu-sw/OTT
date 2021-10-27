@@ -8,4 +8,6 @@ target 'OTT' do
   # Pods for OTT
   pod 'JTAppleCalendar'
   pod 'DropDown'
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
 end
