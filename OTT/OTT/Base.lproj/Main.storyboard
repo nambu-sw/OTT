@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -258,11 +258,11 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="UploadClothesButton"/>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0eV-5Y-fqo">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0eV-5Y-fqo">
                                 <rect key="frame" x="47" y="200" width="320" height="530"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="479" id="6rB-bQ-aKw"/>
+                                    <constraint firstAttribute="height" constant="530" id="6rB-bQ-aKw"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="50" id="UcB-OU-KJJ">
@@ -281,7 +281,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Category" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SnM-tR-BBS">
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Category" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SnM-tR-BBS">
                                                     <rect key="frame" x="92" y="11" width="217" height="28"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="NotoSerifKR-Regular" family="Noto Serif KR" pointSize="23"/>
@@ -335,9 +335,9 @@
                             <constraint firstItem="Cbk-32-qi6" firstAttribute="top" secondItem="N2h-S7-Za5" secondAttribute="top" constant="43" id="Ygy-c7-FDL"/>
                             <constraint firstItem="0eV-5Y-fqo" firstAttribute="centerX" secondItem="y3u-pw-wzr" secondAttribute="centerX" id="l9S-C3-uBp"/>
                             <constraint firstItem="0eV-5Y-fqo" firstAttribute="centerX" secondItem="JjD-Za-U9B" secondAttribute="centerX" id="uUy-CR-RaT"/>
-                            <constraint firstItem="0eV-5Y-fqo" firstAttribute="centerY" secondItem="JjD-Za-U9B" secondAttribute="centerY" constant="-14.5" id="wGg-Ve-03W"/>
+                            <constraint firstItem="0eV-5Y-fqo" firstAttribute="centerY" secondItem="JjD-Za-U9B" secondAttribute="centerY" constant="17" id="wGg-Ve-03W"/>
                             <constraint firstItem="0eV-5Y-fqo" firstAttribute="leading" secondItem="N2h-S7-Za5" secondAttribute="leading" constant="47" id="xsl-zc-spX"/>
-                            <constraint firstItem="y3u-pw-wzr" firstAttribute="top" secondItem="0eV-5Y-fqo" secondAttribute="bottom" constant="32" id="yAo-Wb-frC"/>
+                            <constraint firstItem="y3u-pw-wzr" firstAttribute="top" secondItem="0eV-5Y-fqo" secondAttribute="bottom" constant="8" id="yAo-Wb-frC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fLo-al-eGV"/>
@@ -498,6 +498,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="PlusButton"/>
+                                <connections>
+                                    <action selector="saveImage:" destination="JSK-sG-Mpk" eventType="touchUpInside" id="bnc-SV-i7M"/>
+                                </connections>
                             </button>
                             <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5PB-XE-JjW">
                                 <rect key="frame" x="41" y="610" width="215" height="57"/>
@@ -511,7 +514,7 @@
                                         <fragment content="Category">
                                             <attributes>
                                                 <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <font key="NSFont" size="28" name="NotoSerifKR-ExtraLight"/>
+                                                <font key="NSFont" metaFont="system" size="28"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -537,6 +540,7 @@
                     <navigationItem key="navigationItem" id="gKZ-td-xXr"/>
                     <connections>
                         <outlet property="categoryBtn" destination="5PB-XE-JjW" id="52u-mQ-f5g"/>
+                        <outlet property="descTf" destination="KP4-qP-LBN" id="mxM-Mm-Byu"/>
                         <outlet property="imageView" destination="JdT-oc-uFs" id="enU-he-xYr"/>
                     </connections>
                 </viewController>
@@ -636,7 +640,7 @@
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="tshirt" catalog="system" width="128" height="99"/>
         <image name="로딩 옷장 image" width="294" height="667"/>
-        <image name="설명추가문" width="441" height="28"/>
+        <image name="설명추가문" width="230" height="16"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

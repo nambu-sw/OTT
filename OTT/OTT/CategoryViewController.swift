@@ -13,7 +13,7 @@ class CategoryViewController: UIViewController, UITableViewDataSource, UITableVi
 
     @IBOutlet weak var tableView: UITableView!
     
-    var category:[[String:Any]]?
+    var categorys:[[String:Any]]?
     var categoryCnt:Int?
     
     override func viewDidLoad() {
@@ -30,8 +30,12 @@ class CategoryViewController: UIViewController, UITableViewDataSource, UITableVi
             let json = JSON(value)
             // let result = json["success"].boolValue
             self.categoryCnt = json["count"].intValue
-            self.category = json["data"].arrayObject as? [[String:Any]]
-            print(self.category)
+            self.categorys = json["data"].arrayObject as? [[String:Any]]
+            print(self.categorys)
+            
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
         }
     }
     
@@ -61,8 +65,15 @@ class CategoryViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell", for: indexPath)
 
+        guard let categorys = self.categorys else { return cell }
         
-
+        let category = categorys[indexPath.row]
+        let name = category["category_name"] as? String
+        print(name)
+        
+        let lbl = cell.viewWithTag(1) as? UILabel
+        lbl?.text = name
+        
         return cell
     }
 
