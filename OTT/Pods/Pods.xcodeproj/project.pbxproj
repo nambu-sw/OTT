@@ -7,131 +7,250 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07F663BA70A03887C27A9A564F19FBB4 /* CalendarEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FE2986A8D0E1C28508816B265EEAD8 /* CalendarEnums.swift */; };
-		218169B60CB70CC6837024C22AB5E76D /* JTACMonthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F3610943128772F2FAA8E24066C7 /* JTACMonthCell.swift */; };
-		2C52A824B827A241D1E6607757899428 /* CalendarStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17218B2FFF69DF11B4B9B7BD96016C05 /* CalendarStructs.swift */; };
-		33FE68545949D616FDA53AC6648680A2 /* JTACScrollViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAD7DB62735A93B0A0D962DEB412B00 /* JTACScrollViewDelegates.swift */; };
-		34D86F4481D9328BF45B637B906B3122 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		49A0AB8940C87C4F05841B073EA6AEC9 /* JTACMonthLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CB6FD5541C416D60B848DEAFFC87C8 /* JTACMonthLayout.swift */; };
-		4B6DB2E21EC68F6F45524DD45CBF98D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		515E22E4255B6073C1897BDDB091A2B8 /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F013393ABF8EA9479B2D81BD92B26B3 /* DropDown+Appearance.swift */; };
-		60B8FE7A1FA1FAC1AB7F5ACD5099C9A6 /* JTACMonthQueryFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B25FE1B9FE37CF602BE81174982529 /* JTACMonthQueryFunctions.swift */; };
-		61C05FF6E0D2FCFBAE12987CDEF805D3 /* JTACCollectionMonthViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569772F597B13C0B688AA1F051B7DB55 /* JTACCollectionMonthViewDelegates.swift */; };
-		6279E2DFBF06D98D5DF9A5725FA6B546 /* JTACMonthLayoutVerticalCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6139726CD073898EF1942620AF433E34 /* JTACMonthLayoutVerticalCalendar.swift */; };
-		68E1653C561E14BBEAC9CF4873570D58 /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C171CC13C37D7C3F0CE4A1ED3645CD7 /* DropDownCell.xib */; };
-		6AF2EC04C6587E1E911BC17A187F999E /* JTACMonthViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EC2C3BC64B0CD4A8DC60CF708C13E /* JTACMonthViewProtocols.swift */; };
-		702AF4F21F835C4DB9882F458EC0D53B /* JTACMonthDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD0CCBE0F6652B51670F7CE0B226CE9 /* JTACMonthDelegateProtocol.swift */; };
-		74012B832FAF67F8D62A2B27CDAFE8B5 /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2E38EA7862C01E1E06994607F24213 /* DPDConstants.swift */; };
-		7996E23375F3991B36D90246D29A104C /* JTACInteractionMonthFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D42CEE167FEB12BE8C4DE6DDCBEDCD8 /* JTACInteractionMonthFunctions.swift */; };
-		7B50A2D0AB4DDFDEF44A5D4D4747D973 /* JTACDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7502813B22E1376352ED842B0AF532 /* JTACDayCell.swift */; };
-		7C44CD65C59F386A093037C9B954B6EF /* JTACMonthLayoutProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670FD5B7D33E76CB486394D1309008B1 /* JTACMonthLayoutProtocol.swift */; };
-		84459C4824533C9C4FD12AFC941F3CE1 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE385BBD2E5CA922A15B1C35D8913E7 /* DropDown.swift */; };
-		89A72A55273CE358DC4E7600F785C37B /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331010E7F18C51E13B63AF66591FFBA5 /* DPDKeyboardListener.swift */; };
-		907338727C09F65DB75AA7AB9E10C3B4 /* DropDown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B88D4DB1F7A70DF1F607E5D64EBDB9CD /* DropDown-dummy.m */; };
-		95EA3A8CA898A96BDCB19F23179E2C69 /* JTAppleCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22FCED25324467D0EC38D51BC17929C3 /* JTAppleCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9CA4AD1EFAC3DDEBDA9D40D7A8D6F830 /* Pods-OTT-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 233CC78935950038C0430F464AAA7B83 /* Pods-OTT-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A11F7640834EB92D68C92E5D155A4B86 /* JTACYearViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A2BC4E77C1742129CE934E4968FA75 /* JTACYearViewProtocols.swift */; };
-		B2D09C4CE320AD52ACD82072467332B0 /* JTACMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2D127B973F1D0D8891CAE7DC1E088 /* JTACMonthView.swift */; };
-		B41653FA2316873CA0BEF04769052276 /* Pods-OTT-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D91B85FD4E3141AC95EF39DC826CDFAA /* Pods-OTT-dummy.m */; };
-		B73E510E851686F8184E26986A470458 /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2372075D134A26F132801F7B8C2A4ECA /* DPDUIView+Extension.swift */; };
-		B91110691DAA3AB104176D240BEE80E8 /* JTACMonthLayoutHorizontalCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC6D54FF5EED398B11641773B441B43 /* JTACMonthLayoutHorizontalCalendar.swift */; };
-		BBBBCE636F33124AC18B8C57F2A3C35E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		BDC10974A8641F01C5665C61EA37A153 /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E2FD0070354C33A36B76BFC841BD10 /* DropDownCell.swift */; };
-		C02C810DAF4176740FA2853F7047BA32 /* JTACVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100A1C62B3E340511D182D372CCA49D6 /* JTACVariables.swift */; };
-		C32D0B8F6CA868B079798D8A9471F606 /* JTACInteractionYearFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CFB109541AC5AD5F03D318A9860A4A /* JTACInteractionYearFunctions.swift */; };
-		D0D5D3EFE19CDA8CD121AECD329CEE2A /* JTAppleCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E53A4BF8B0FCB2432FA1C83666E3879B /* JTAppleCalendar-dummy.m */; };
-		D5E244429EE54AF123D6692DCB00A196 /* JTACYearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC5CD47448ABCB5296E899735FF251B /* JTACYearView.swift */; };
-		D8A6D878829A23D3A4A3DF12FFD0ECC4 /* GlobalFunctionsAndExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA459B05929AD6D05279F7AAE57CFAE /* GlobalFunctionsAndExtensions.swift */; };
-		DF3AA3AFA1AD19EA473B6E22119D195D /* JTACMonthActionFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF07028CB3D6F9F8C9480D7D46980A97 /* JTACMonthActionFunctions.swift */; };
-		E0A8C46EEE733B55971B1CC5ED65C9AA /* DropDown-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA935B857047658A06DA831C217D77CB /* DropDown-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E405FA6E419E6465D584C95FA4405F85 /* JTACMonthReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD6B55F5314E3DA22E75C0BF034B171 /* JTACMonthReusableView.swift */; };
-		EFECFC25F252EC86A77089E7D4C3DC48 /* JTACCollectionYearViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCAAD32CD83DF2B9B6B5889C2D8266D /* JTACCollectionYearViewDelegates.swift */; };
+		02621C4B82398D0657F474E21493A3A2 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8C57FDB6140893380681B558F55FD7 /* HTTPMethod.swift */; };
+		02DB462B121245593CE653B9B377F970 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4AD521A0DDBA58F12BBD09EC9A0903 /* Protected.swift */; };
+		05A58104F8565868994086F75FDDA3A9 /* Pods-OTT-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 233CC78935950038C0430F464AAA7B83 /* Pods-OTT-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07F663BA70A03887C27A9A564F19FBB4 /* CalendarEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECA2EAEFC0B82C8919CD958E8E7C93D /* CalendarEnums.swift */; };
+		0B399DCF32F8FE4F09B03B6E7B65E0D1 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 95BF0EA36E765505B761A156733ADC6B /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13E62623092B680C6A5C349D48B8A4FD /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEDF63FCF99F2ED7940E2541A846C93 /* CachedResponseHandler.swift */; };
+		1773084DECF68CADD45567FBEC56036D /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ABE4A8ACCBA89791ABAC28CEC4BF0B /* Alamofire-dummy.m */; };
+		1D17B83410DC98911D539F2BD5254C05 /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538A33689A8F2F1C3B815CD2B14E320F /* RequestTaskMap.swift */; };
+		218169B60CB70CC6837024C22AB5E76D /* JTACMonthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF476798560CFFD65A4569875A4E0AB /* JTACMonthCell.swift */; };
+		2550F0D474DE846FEC5C76CBE85F927E /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005228CE9DDF872BE73DED536BD32EF3 /* OperationQueue+Alamofire.swift */; };
+		2C52A824B827A241D1E6607757899428 /* CalendarStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1901D27F403EEE4BF66FE19C24528BAB /* CalendarStructs.swift */; };
+		30A331CD9286145E92DB11D671664C63 /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = D304908A04E22522C6E51C47227BE818 /* MultipartUpload.swift */; };
+		325CCDB295FFA016638075B5D2CEDD5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */; };
+		33F86FAB918B148A63A1575667F9B570 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3D57353834825F7B52B816066B7789 /* CFNetwork.framework */; };
+		33FE68545949D616FDA53AC6648680A2 /* JTACScrollViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A67D2A0036F6249108182B0AA4DAB /* JTACScrollViewDelegates.swift */; };
+		34D86F4481D9328BF45B637B906B3122 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */; };
+		4634BA717BFCE522E5B42304C6A78B5D /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C6AFAB3D09390D170E94E47A505CC8 /* ParameterEncoding.swift */; };
+		471611F482CDC15BF464E3BA9CB83968 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1CD204BB22623CE34BD146D2BE0D24 /* Notifications.swift */; };
+		49A0AB8940C87C4F05841B073EA6AEC9 /* JTACMonthLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6CF2E7D4A127527F7E8C5C9611CEA4 /* JTACMonthLayout.swift */; };
+		512FAFBD71830F126224C033B6C45F4E /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950AB63F9510B10BB1E6A7541D6EB78C /* RetryPolicy.swift */; };
+		515E22E4255B6073C1897BDDB091A2B8 /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9A72DA3780DF092883891362C216D8 /* DropDown+Appearance.swift */; };
+		52BE6F747C26DF2A24532458E55DC10F /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB772BEDC073E95D77F92E97DE1374B /* HTTPHeaders.swift */; };
+		5E594FA3290D3D70F500572D0AC100DB /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A6D81AF2E6A968ED8999F292AB6686 /* URLConvertible+URLRequestConvertible.swift */; };
+		5FA526557719FDBE81B1974B113CF600 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2A56103FE44E7FF71EA5C9DFB9E2B7 /* SwiftyJSON-dummy.m */; };
+		60B8FE7A1FA1FAC1AB7F5ACD5099C9A6 /* JTACMonthQueryFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B46AFA619910351F0CD6154187EA01 /* JTACMonthQueryFunctions.swift */; };
+		61C05FF6E0D2FCFBAE12987CDEF805D3 /* JTACCollectionMonthViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6D2A33BC7FAA788B76787DCD38DBCC /* JTACCollectionMonthViewDelegates.swift */; };
+		6279E2DFBF06D98D5DF9A5725FA6B546 /* JTACMonthLayoutVerticalCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4914181FB93040CEB476A4077EE59D6 /* JTACMonthLayoutVerticalCalendar.swift */; };
+		688337B18659C4BF722F87AFC4FEEF81 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE1BE5BB9990D93A503605C6408C897 /* SessionDelegate.swift */; };
+		68E1653C561E14BBEAC9CF4873570D58 /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DFD5AD18A31B91DC18A875675816C0E /* DropDownCell.xib */; };
+		6AF2EC04C6587E1E911BC17A187F999E /* JTACMonthViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8990C0F1564829725C4DF18839120059 /* JTACMonthViewProtocols.swift */; };
+		702AF4F21F835C4DB9882F458EC0D53B /* JTACMonthDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07242C94320DA782EE660C3C7397E8B /* JTACMonthDelegateProtocol.swift */; };
+		707FCC7B01202983A27639D7B1054B22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */; };
+		74012B832FAF67F8D62A2B27CDAFE8B5 /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F682C1F813D2B3B42295177D64571932 /* DPDConstants.swift */; };
+		7996E23375F3991B36D90246D29A104C /* JTACInteractionMonthFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F440BA80DC38025AE88090CED7A1EB5 /* JTACInteractionMonthFunctions.swift */; };
+		7B50A2D0AB4DDFDEF44A5D4D4747D973 /* JTACDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE5AF0433E67B689CE9236C2B81EB4 /* JTACDayCell.swift */; };
+		7C44CD65C59F386A093037C9B954B6EF /* JTACMonthLayoutProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1A3FF925A164C3E64D908734454002 /* JTACMonthLayoutProtocol.swift */; };
+		84459C4824533C9C4FD12AFC941F3CE1 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = A243EF7E592A65E29A75172536065E7E /* DropDown.swift */; };
+		89A72A55273CE358DC4E7600F785C37B /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530D80B3111E24DCBE0A72CC9C10F155 /* DPDKeyboardListener.swift */; };
+		8B9CDBE3FFD712120CD66DD8B06C44E4 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36883C797D685931A8AAF92B8D4813D /* ParameterEncoder.swift */; };
+		8F9E1EEF2FE52E3231A769722D5C4148 /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1695FD0268DDA455F67A702363906B10 /* ServerTrustEvaluation.swift */; };
+		907338727C09F65DB75AA7AB9E10C3B4 /* DropDown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6576ADCC1BF7EE33F0533B2A7C45444D /* DropDown-dummy.m */; };
+		941822CDF68EB8F4D49F150457A82616 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823D993004B0E1E4BCD5B3FB7ACFE7CA /* ResponseSerialization.swift */; };
+		95EA3A8CA898A96BDCB19F23179E2C69 /* JTAppleCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BAC82D2109AD900F6594D0046F9D32D1 /* JTAppleCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97584BC08D2B494417BDEE268CFF38C9 /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9CC92138A1D1136B7899ACC9D7D2E9 /* Combine.swift */; };
+		989850EABB0E8A60A15A68F152D28B30 /* Pods-OTT-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D91B85FD4E3141AC95EF39DC826CDFAA /* Pods-OTT-dummy.m */; };
+		9C0BE8FA0030B2BC1DF7C159FA059389 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */; };
+		9CFDA7C92E0EEA31F709663B0E727ABA /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD1B8B0D7C6386C937860EDECADE2C5 /* EventMonitor.swift */; };
+		A115142039C23F91827E6961CC479F05 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D438E70100B6F16B71C56CABA0373D8 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A11F7640834EB92D68C92E5D155A4B86 /* JTACYearViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444F540FBAE7F777784D909428AE8F7F /* JTACYearViewProtocols.swift */; };
+		A3153333FC136836B0028E6AB2A56BEE /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC14669488D74069E07AF55716872318 /* AlamofireExtended.swift */; };
+		A3CEE8324948497036C4E123B21CBC59 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D911380E230D0B9F55F6D005102852 /* SwiftyJSON.swift */; };
+		A4F1202CE5BBE79F3BBCAE3D2B16BC03 /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = D679603CA281EB812964457935E7830E /* Result+Alamofire.swift */; };
+		A664924D6CCE2922A3F81EC932F4D476 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D930C8EA986450858480F7D5B4505B7 /* AFError.swift */; };
+		B2D09C4CE320AD52ACD82072467332B0 /* JTACMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48FFF70AEAFC82351E25924CC6538DE /* JTACMonthView.swift */; };
+		B6473B8E8353317F75D6800D4F7054CB /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A9875072CED7DC8A3FDED8F99B8F01 /* NetworkReachabilityManager.swift */; };
+		B73E510E851686F8184E26986A470458 /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6208EB8BBF45ECA115BB03C5457A2FF1 /* DPDUIView+Extension.swift */; };
+		B89D1C69742F61878115334A1D2DFFE7 /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5915D52CF9AD0B0749870F9558203562 /* URLRequest+Alamofire.swift */; };
+		B91110691DAA3AB104176D240BEE80E8 /* JTACMonthLayoutHorizontalCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FABD699FE031842349948CCAE06DDB /* JTACMonthLayoutHorizontalCalendar.swift */; };
+		BBBBCE636F33124AC18B8C57F2A3C35E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */; };
+		BDC10974A8641F01C5665C61EA37A153 /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0BB5910DEEB46359F71C4C25168AEB /* DropDownCell.swift */; };
+		C02C810DAF4176740FA2853F7047BA32 /* JTACVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC80934008B887BED2C55195768F018 /* JTACVariables.swift */; };
+		C16A047C4E8D856309A486182A490993 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B398E3D20DE5DFAE72DDC317B245EB /* MultipartFormData.swift */; };
+		C32D0B8F6CA868B079798D8A9471F606 /* JTACInteractionYearFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B850EA1D637D3C2E87A114EF1F7AEF1B /* JTACInteractionYearFunctions.swift */; };
+		C7F66519CE6148F21D7DB11423F1D34D /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F171D5B4513CD546592C56E35F3C6B /* Response.swift */; };
+		D0D5D3EFE19CDA8CD121AECD329CEE2A /* JTAppleCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3136B796BD3862E127072425F89E2E /* JTAppleCalendar-dummy.m */; };
+		D15FEA31AA9625BBF041FB91E48A9995 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D67A7072D16349DB0CD3F1167C15C0F /* Validation.swift */; };
+		D5E244429EE54AF123D6692DCB00A196 /* JTACYearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54B83370752BFAF4A422BE1719E94AD /* JTACYearView.swift */; };
+		D8A6D878829A23D3A4A3DF12FFD0ECC4 /* GlobalFunctionsAndExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BBE8AF88865A35F1831B10C2558A29 /* GlobalFunctionsAndExtensions.swift */; };
+		DCD0C33A2B50811D53CF68F021284B47 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE2DDA7268026F30A99C3C269BD398 /* DispatchQueue+Alamofire.swift */; };
+		DD58A00EACBEE274C381B491519C6B8C /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B43FD4B318411AF1F190C389134906 /* RedirectHandler.swift */; };
+		DF3AA3AFA1AD19EA473B6E22119D195D /* JTACMonthActionFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEBFA31E033D653AEABABC2C8427BEA /* JTACMonthActionFunctions.swift */; };
+		E0A8C46EEE733B55971B1CC5ED65C9AA /* DropDown-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C688DBB5B52117DB21D695D20E3E1DA /* DropDown-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0C65E16219718869CD2AFCA2C5465CB /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D450246FCB38752724589D98006DEF /* Request.swift */; };
+		E1769C267E82B0C24FE0FFBF949F0A6E /* StringEncoding+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C3F05B9E2C3A58E2E44126957A7EA7 /* StringEncoding+Alamofire.swift */; };
+		E405FA6E419E6465D584C95FA4405F85 /* JTACMonthReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA5460D648F1E2E774831C6600FA9A0 /* JTACMonthReusableView.swift */; };
+		E857ADCAD7B647883D5B2AEC3F16D1D5 /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7916D316C8D3359D2D04E39BDA0AD65A /* URLSessionConfiguration+Alamofire.swift */; };
+		EC11B17DA78F7EEBEBC3EFAF68C6DF9F /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72504D7EA1AC473CD22FE350E8625766 /* Session.swift */; };
+		EFECFC25F252EC86A77089E7D4C3DC48 /* JTACCollectionYearViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEDAD0B73D105F95A87681294832196 /* JTACCollectionYearViewDelegates.swift */; };
+		F36D96A4346C90A2D11CB3B6A2ECF4CF /* AuthenticationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F07795B10D7FAC327F5D489119175D4 /* AuthenticationInterceptor.swift */; };
+		F5D2A31C7EB1DE010771140B6E7ABAD8 /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792650B7EF34792E47E707718D456E32 /* URLEncodedFormEncoder.swift */; };
+		F63BE0585331CAA3482EF736803F8243 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09D8BFAE056C3B4D923AE06533A0431 /* RequestInterceptor.swift */; };
+		FEDBAD32E2EDA85AD6E362B82892A74A /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958A45979EC53C0B80E71D1718970D06 /* Alamofire.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		84CBFF9D00254FB6E889E112D8EE6D62 /* PBXContainerItemProxy */ = {
+		53CB29AC6C1D3BF85D6080224D1AE54A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
+		617F072C50A9FD971350B6EDC7F2038D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 421B6ABF460857FE6CA2905EFB5A4F74;
 			remoteInfo = JTAppleCalendar;
 		};
-		94631905B5127BD55D480CBC83A6DD97 /* PBXContainerItemProxy */ = {
+		886E5919208BB7ABE21A1BF6FAFD1C6C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E9F9401E9C74C0C393164FD8D86D0068;
 			remoteInfo = DropDown;
 		};
+		D66AA62EBE660C26C1D70D7E89CD5331 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D118A6A04828FD3CDA8640CD2B6796D2;
+			remoteInfo = SwiftyJSON;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		066B29C201E70C65C4D47EE558B6A046 /* DropDown-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DropDown-Info.plist"; sourceTree = "<group>"; };
-		0D42CEE167FEB12BE8C4DE6DDCBEDCD8 /* JTACInteractionMonthFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACInteractionMonthFunctions.swift; path = Sources/JTAppleCalendar/JTACInteractionMonthFunctions.swift; sourceTree = "<group>"; };
-		100A1C62B3E340511D182D372CCA49D6 /* JTACVariables.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACVariables.swift; path = Sources/JTAppleCalendar/JTACVariables.swift; sourceTree = "<group>"; };
-		17218B2FFF69DF11B4B9B7BD96016C05 /* CalendarStructs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarStructs.swift; path = Sources/JTAppleCalendar/CalendarStructs.swift; sourceTree = "<group>"; };
-		19339EA34BF9A3F8CEBC629A3E23A006 /* JTAppleCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JTAppleCalendar.release.xcconfig; sourceTree = "<group>"; };
-		1DD0CCBE0F6652B51670F7CE0B226CE9 /* JTACMonthDelegateProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthDelegateProtocol.swift; path = Sources/JTAppleCalendar/JTACMonthDelegateProtocol.swift; sourceTree = "<group>"; };
-		1EC5CD47448ABCB5296E899735FF251B /* JTACYearView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACYearView.swift; path = Sources/JTAppleCalendar/JTACYearView.swift; sourceTree = "<group>"; };
+		005228CE9DDF872BE73DED536BD32EF3 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		02B398E3D20DE5DFAE72DDC317B245EB /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		02FABD699FE031842349948CCAE06DDB /* JTACMonthLayoutHorizontalCalendar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthLayoutHorizontalCalendar.swift; path = Sources/JTAppleCalendar/JTACMonthLayoutHorizontalCalendar.swift; sourceTree = "<group>"; };
+		05D450246FCB38752724589D98006DEF /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		0C8C57FDB6140893380681B558F55FD7 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
+		0F9CC92138A1D1136B7899ACC9D7D2E9 /* Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Combine.swift; path = Source/Combine.swift; sourceTree = "<group>"; };
+		0FCD481406FB74217CDBE264696DC9C5 /* DropDown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.debug.xcconfig; sourceTree = "<group>"; };
+		138747E836B8B33067097B0870B65794 /* JTAppleCalendar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JTAppleCalendar-Info.plist"; sourceTree = "<group>"; };
+		14C3F05B9E2C3A58E2E44126957A7EA7 /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringEncoding+Alamofire.swift"; path = "Source/StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
+		1695FD0268DDA455F67A702363906B10 /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
+		1901D27F403EEE4BF66FE19C24528BAB /* CalendarStructs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarStructs.swift; path = Sources/JTAppleCalendar/CalendarStructs.swift; sourceTree = "<group>"; };
+		1DFD5AD18A31B91DC18A875675816C0E /* DropDownCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DropDownCell.xib; path = DropDown/resources/DropDownCell.xib; sourceTree = "<group>"; };
 		1F0FDC1CA65626E805BA2A99D352BBCF /* Pods-OTT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OTT.debug.xcconfig"; sourceTree = "<group>"; };
-		22FCED25324467D0EC38D51BC17929C3 /* JTAppleCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTAppleCalendar-umbrella.h"; sourceTree = "<group>"; };
+		1FD1B8B0D7C6386C937860EDECADE2C5 /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
 		233CC78935950038C0430F464AAA7B83 /* Pods-OTT-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OTT-umbrella.h"; sourceTree = "<group>"; };
-		2372075D134A26F132801F7B8C2A4ECA /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DPDUIView+Extension.swift"; path = "DropDown/helpers/DPDUIView+Extension.swift"; sourceTree = "<group>"; };
-		331010E7F18C51E13B63AF66591FFBA5 /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDKeyboardListener.swift; path = DropDown/helpers/DPDKeyboardListener.swift; sourceTree = "<group>"; };
-		37CFB109541AC5AD5F03D318A9860A4A /* JTACInteractionYearFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACInteractionYearFunctions.swift; path = Sources/JTAppleCalendar/JTACInteractionYearFunctions.swift; sourceTree = "<group>"; };
-		3C7502813B22E1376352ED842B0AF532 /* JTACDayCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACDayCell.swift; path = Sources/JTAppleCalendar/JTACDayCell.swift; sourceTree = "<group>"; };
-		3DCAAD32CD83DF2B9B6B5889C2D8266D /* JTACCollectionYearViewDelegates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACCollectionYearViewDelegates.swift; path = Sources/JTAppleCalendar/JTACCollectionYearViewDelegates.swift; sourceTree = "<group>"; };
-		42840D3395F798E3DEAB9D76CBA3C36C /* DropDown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.debug.xcconfig; sourceTree = "<group>"; };
-		43B25FE1B9FE37CF602BE81174982529 /* JTACMonthQueryFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthQueryFunctions.swift; path = Sources/JTAppleCalendar/JTACMonthQueryFunctions.swift; sourceTree = "<group>"; };
-		569772F597B13C0B688AA1F051B7DB55 /* JTACCollectionMonthViewDelegates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACCollectionMonthViewDelegates.swift; path = Sources/JTAppleCalendar/JTACCollectionMonthViewDelegates.swift; sourceTree = "<group>"; };
-		578EC2C3BC64B0CD4A8DC60CF708C13E /* JTACMonthViewProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthViewProtocols.swift; path = Sources/JTAppleCalendar/JTACMonthViewProtocols.swift; sourceTree = "<group>"; };
+		23EFB0347DAB81370339E500CDB4E36F /* JTAppleCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTAppleCalendar-prefix.pch"; sourceTree = "<group>"; };
+		2A6BF973BF9AE3914BEE31645B135DB9 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		2D438E70100B6F16B71C56CABA0373D8 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		2E12A490D3E525F6B3E2C79B33685FC1 /* SwiftyJSON.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.release.xcconfig; sourceTree = "<group>"; };
+		2EBF0B9C9AEAE524D83E0260D695FE3B /* SwiftyJSON-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyJSON-Info.plist"; sourceTree = "<group>"; };
+		3B53AFE0273A9DCF1A0A5B7A18BFB735 /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
+		444F540FBAE7F777784D909428AE8F7F /* JTACYearViewProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACYearViewProtocols.swift; path = Sources/JTAppleCalendar/JTACYearViewProtocols.swift; sourceTree = "<group>"; };
+		48BBF8A5B2093ACE5BDBE3023BA3F1C0 /* Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.debug.xcconfig; sourceTree = "<group>"; };
+		4C688DBB5B52117DB21D695D20E3E1DA /* DropDown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-umbrella.h"; sourceTree = "<group>"; };
+		4D930C8EA986450858480F7D5B4505B7 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		4ECA2EAEFC0B82C8919CD958E8E7C93D /* CalendarEnums.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarEnums.swift; path = Sources/JTAppleCalendar/CalendarEnums.swift; sourceTree = "<group>"; };
+		530D80B3111E24DCBE0A72CC9C10F155 /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDKeyboardListener.swift; path = DropDown/helpers/DPDKeyboardListener.swift; sourceTree = "<group>"; };
+		538A33689A8F2F1C3B815CD2B14E320F /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
+		53A9875072CED7DC8A3FDED8F99B8F01 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		58B43FD4B318411AF1F190C389134906 /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
+		5915D52CF9AD0B0749870F9558203562 /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
+		5D67A7072D16349DB0CD3F1167C15C0F /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EC2CC65C8362564A7849F00EBB8C7B5 /* Pods-OTT-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OTT-acknowledgements.plist"; sourceTree = "<group>"; };
-		60A2BC4E77C1742129CE934E4968FA75 /* JTACYearViewProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACYearViewProtocols.swift; path = Sources/JTAppleCalendar/JTACYearViewProtocols.swift; sourceTree = "<group>"; };
-		6139726CD073898EF1942620AF433E34 /* JTACMonthLayoutVerticalCalendar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthLayoutVerticalCalendar.swift; path = Sources/JTAppleCalendar/JTACMonthLayoutVerticalCalendar.swift; sourceTree = "<group>"; };
-		670FD5B7D33E76CB486394D1309008B1 /* JTACMonthLayoutProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthLayoutProtocol.swift; path = Sources/JTAppleCalendar/JTACMonthLayoutProtocol.swift; sourceTree = "<group>"; };
-		6C171CC13C37D7C3F0CE4A1ED3645CD7 /* DropDownCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DropDownCell.xib; path = DropDown/resources/DropDownCell.xib; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7C27AE93D297316D44E4C868029BACEB /* JTAppleCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JTAppleCalendar.modulemap; sourceTree = "<group>"; };
-		7CD6B55F5314E3DA22E75C0BF034B171 /* JTACMonthReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthReusableView.swift; path = Sources/JTAppleCalendar/JTACMonthReusableView.swift; sourceTree = "<group>"; };
-		7E2E38EA7862C01E1E06994607F24213 /* DPDConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDConstants.swift; path = DropDown/helpers/DPDConstants.swift; sourceTree = "<group>"; };
-		84E2D127B973F1D0D8891CAE7DC1E088 /* JTACMonthView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthView.swift; path = Sources/JTAppleCalendar/JTACMonthView.swift; sourceTree = "<group>"; };
-		8965F3610943128772F2FAA8E24066C7 /* JTACMonthCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthCell.swift; path = Sources/JTAppleCalendar/JTACMonthCell.swift; sourceTree = "<group>"; };
-		8F013393ABF8EA9479B2D81BD92B26B3 /* DropDown+Appearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DropDown+Appearance.swift"; path = "DropDown/src/DropDown+Appearance.swift"; sourceTree = "<group>"; };
+		5EE1BE5BB9990D93A503605C6408C897 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		6208EB8BBF45ECA115BB03C5457A2FF1 /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DPDUIView+Extension.swift"; path = "DropDown/helpers/DPDUIView+Extension.swift"; sourceTree = "<group>"; };
+		6576ADCC1BF7EE33F0533B2A7C45444D /* DropDown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DropDown-dummy.m"; sourceTree = "<group>"; };
+		6F440BA80DC38025AE88090CED7A1EB5 /* JTACInteractionMonthFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACInteractionMonthFunctions.swift; path = Sources/JTAppleCalendar/JTACInteractionMonthFunctions.swift; sourceTree = "<group>"; };
+		72504D7EA1AC473CD22FE350E8625766 /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Session.swift; sourceTree = "<group>"; };
+		7916D316C8D3359D2D04E39BDA0AD65A /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
+		792650B7EF34792E47E707718D456E32 /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
+		7B10F4DCCFB2373E78D880B7748A3610 /* SwiftyJSON.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.debug.xcconfig; sourceTree = "<group>"; };
+		7BEDAD0B73D105F95A87681294832196 /* JTACCollectionYearViewDelegates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACCollectionYearViewDelegates.swift; path = Sources/JTAppleCalendar/JTACCollectionYearViewDelegates.swift; sourceTree = "<group>"; };
+		7F07795B10D7FAC327F5D489119175D4 /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationInterceptor.swift; path = Source/AuthenticationInterceptor.swift; sourceTree = "<group>"; };
+		823D993004B0E1E4BCD5B3FB7ACFE7CA /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		8990C0F1564829725C4DF18839120059 /* JTACMonthViewProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthViewProtocols.swift; path = Sources/JTAppleCalendar/JTACMonthViewProtocols.swift; sourceTree = "<group>"; };
+		8BC148B303D76EFD92A1209BFA3FD024 /* DropDown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DropDown.modulemap; sourceTree = "<group>"; };
+		8CB772BEDC073E95D77F92E97DE1374B /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
+		8D3D57353834825F7B52B816066B7789 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		8E3136B796BD3862E127072425F89E2E /* JTAppleCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JTAppleCalendar-dummy.m"; sourceTree = "<group>"; };
+		8F6CF2E7D4A127527F7E8C5C9611CEA4 /* JTACMonthLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthLayout.swift; path = Sources/JTAppleCalendar/JTACMonthLayout.swift; sourceTree = "<group>"; };
 		9466AA30C4F7D938385A678AF3201D09 /* Pods-OTT-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OTT-acknowledgements.markdown"; sourceTree = "<group>"; };
-		94CB6FD5541C416D60B848DEAFFC87C8 /* JTACMonthLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthLayout.swift; path = Sources/JTAppleCalendar/JTACMonthLayout.swift; sourceTree = "<group>"; };
+		950AB63F9510B10BB1E6A7541D6EB78C /* RetryPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryPolicy.swift; path = Source/RetryPolicy.swift; sourceTree = "<group>"; };
+		958A45979EC53C0B80E71D1718970D06 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		95BF0EA36E765505B761A156733ADC6B /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		98ABE4A8ACCBA89791ABAC28CEC4BF0B /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		9907B4D530B4E968F821C458735EB734 /* Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.release.xcconfig; sourceTree = "<group>"; };
+		9B0BB5910DEEB46359F71C4C25168AEB /* DropDownCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDownCell.swift; path = DropDown/src/DropDownCell.swift; sourceTree = "<group>"; };
 		9B6725B782188F18CB76A740433F14E4 /* DropDown */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DropDown; path = DropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9EF5E64147D538C59AA452CAB811EC00 /* JTAppleCalendar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JTAppleCalendar-Info.plist"; sourceTree = "<group>"; };
-		9FDACA85816A0693AD564211D4C7BCF8 /* JTAppleCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JTAppleCalendar.debug.xcconfig; sourceTree = "<group>"; };
+		9EF476798560CFFD65A4569875A4E0AB /* JTACMonthCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthCell.swift; path = Sources/JTAppleCalendar/JTACMonthCell.swift; sourceTree = "<group>"; };
 		A0C8E428D980D3C9293A3C2BF740F0CD /* JTAppleCalendar */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JTAppleCalendar; path = JTAppleCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A243EF7E592A65E29A75172536065E7E /* DropDown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDown.swift; path = DropDown/src/DropDown.swift; sourceTree = "<group>"; };
+		A4BBE8AF88865A35F1831B10C2558A29 /* GlobalFunctionsAndExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalFunctionsAndExtensions.swift; path = Sources/JTAppleCalendar/GlobalFunctionsAndExtensions.swift; sourceTree = "<group>"; };
 		AA213722D9B4D54F6429A2413F05929B /* Pods-OTT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OTT.release.xcconfig"; sourceTree = "<group>"; };
-		B88D4DB1F7A70DF1F607E5D64EBDB9CD /* DropDown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DropDown-dummy.m"; sourceTree = "<group>"; };
-		BDAD7DB62735A93B0A0D962DEB412B00 /* JTACScrollViewDelegates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACScrollViewDelegates.swift; path = Sources/JTAppleCalendar/JTACScrollViewDelegates.swift; sourceTree = "<group>"; };
-		BDC6D54FF5EED398B11641773B441B43 /* JTACMonthLayoutHorizontalCalendar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthLayoutHorizontalCalendar.swift; path = Sources/JTAppleCalendar/JTACMonthLayoutHorizontalCalendar.swift; sourceTree = "<group>"; };
-		C5FE2986A8D0E1C28508816B265EEAD8 /* CalendarEnums.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarEnums.swift; path = Sources/JTAppleCalendar/CalendarEnums.swift; sourceTree = "<group>"; };
-		CBA459B05929AD6D05279F7AAE57CFAE /* GlobalFunctionsAndExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalFunctionsAndExtensions.swift; path = Sources/JTAppleCalendar/GlobalFunctionsAndExtensions.swift; sourceTree = "<group>"; };
-		CC7A46B01AE8FE3146D89BFDC1FEAA80 /* JTAppleCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTAppleCalendar-prefix.pch"; sourceTree = "<group>"; };
-		CED188622A61351F29FA4D2A73BDB6FA /* DropDown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-prefix.pch"; sourceTree = "<group>"; };
-		CF07028CB3D6F9F8C9480D7D46980A97 /* JTACMonthActionFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthActionFunctions.swift; path = Sources/JTAppleCalendar/JTACMonthActionFunctions.swift; sourceTree = "<group>"; };
-		D1BC041F7D711358B369FC17CB08F63D /* DropDown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DropDown.modulemap; sourceTree = "<group>"; };
+		AD74C0EB372864C67FB389D2FE497CA4 /* DropDown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.release.xcconfig; sourceTree = "<group>"; };
+		AE0A67D2A0036F6249108182B0AA4DAB /* JTACScrollViewDelegates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACScrollViewDelegates.swift; path = Sources/JTAppleCalendar/JTACScrollViewDelegates.swift; sourceTree = "<group>"; };
+		B07242C94320DA782EE660C3C7397E8B /* JTACMonthDelegateProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthDelegateProtocol.swift; path = Sources/JTAppleCalendar/JTACMonthDelegateProtocol.swift; sourceTree = "<group>"; };
+		B2064C1E1D5EC416A52D5B089E1BD291 /* JTAppleCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JTAppleCalendar.debug.xcconfig; sourceTree = "<group>"; };
+		B3A6D81AF2E6A968ED8999F292AB6686 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
+		B850EA1D637D3C2E87A114EF1F7AEF1B /* JTACInteractionYearFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACInteractionYearFunctions.swift; path = Sources/JTAppleCalendar/JTACInteractionYearFunctions.swift; sourceTree = "<group>"; };
+		BAC82D2109AD900F6594D0046F9D32D1 /* JTAppleCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTAppleCalendar-umbrella.h"; sourceTree = "<group>"; };
+		BC14669488D74069E07AF55716872318 /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
+		BCCE5AF0433E67B689CE9236C2B81EB4 /* JTACDayCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACDayCell.swift; path = Sources/JTAppleCalendar/JTACDayCell.swift; sourceTree = "<group>"; };
+		BDEBFA31E033D653AEABABC2C8427BEA /* JTACMonthActionFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthActionFunctions.swift; path = Sources/JTAppleCalendar/JTACMonthActionFunctions.swift; sourceTree = "<group>"; };
+		BDEDF63FCF99F2ED7940E2541A846C93 /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
+		C0C6AFAB3D09390D170E94E47A505CC8 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		CA1CD204BB22623CE34BD146D2BE0D24 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		CB3CDEEFD749C5A5CB86B446AB68BDBE /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		CB9A72DA3780DF092883891362C216D8 /* DropDown+Appearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DropDown+Appearance.swift"; path = "DropDown/src/DropDown+Appearance.swift"; sourceTree = "<group>"; };
+		CC0675594F873560FEE064787C8252DC /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		CEC80934008B887BED2C55195768F018 /* JTACVariables.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACVariables.swift; path = Sources/JTAppleCalendar/JTACVariables.swift; sourceTree = "<group>"; };
+		CFA5460D648F1E2E774831C6600FA9A0 /* JTACMonthReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthReusableView.swift; path = Sources/JTAppleCalendar/JTACMonthReusableView.swift; sourceTree = "<group>"; };
+		D02A010E7067EDF2A1D64BA9051FC455 /* JTAppleCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JTAppleCalendar.modulemap; sourceTree = "<group>"; };
+		D09D8BFAE056C3B4D923AE06533A0431 /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/RequestInterceptor.swift; sourceTree = "<group>"; };
 		D267A1E631176E9AD9000765533607EA /* Pods-OTT-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OTT-frameworks.sh"; sourceTree = "<group>"; };
+		D2F171D5B4513CD546592C56E35F3C6B /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		D304908A04E22522C6E51C47227BE818 /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
+		D36883C797D685931A8AAF92B8D4813D /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/ParameterEncoder.swift; sourceTree = "<group>"; };
+		D3D911380E230D0B9F55F6D005102852 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON/SwiftyJSON.swift; sourceTree = "<group>"; };
+		D4914181FB93040CEB476A4077EE59D6 /* JTACMonthLayoutVerticalCalendar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthLayoutVerticalCalendar.swift; path = Sources/JTAppleCalendar/JTACMonthLayoutVerticalCalendar.swift; sourceTree = "<group>"; };
+		D54B83370752BFAF4A422BE1719E94AD /* JTACYearView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACYearView.swift; path = Sources/JTAppleCalendar/JTACYearView.swift; sourceTree = "<group>"; };
+		D679603CA281EB812964457935E7830E /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
 		D7AAC7E23DC144067D80D6B142D5C1E8 /* Pods-OTT.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OTT.modulemap"; sourceTree = "<group>"; };
 		D91B85FD4E3141AC95EF39DC826CDFAA /* Pods-OTT-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OTT-dummy.m"; sourceTree = "<group>"; };
+		D94858CDCC868D3490A185ABA2A234AB /* JTAppleCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JTAppleCalendar.release.xcconfig; sourceTree = "<group>"; };
+		DA4CA4FD9F5426505415FD3D432BC38F /* DropDown-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DropDown-Info.plist"; sourceTree = "<group>"; };
+		DB4AD521A0DDBA58F12BBD09EC9A0903 /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Source/Protected.swift; sourceTree = "<group>"; };
+		DC1A3FF925A164C3E64D908734454002 /* JTACMonthLayoutProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthLayoutProtocol.swift; path = Sources/JTAppleCalendar/JTACMonthLayoutProtocol.swift; sourceTree = "<group>"; };
+		DE6D2A33BC7FAA788B76787DCD38DBCC /* JTACCollectionMonthViewDelegates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACCollectionMonthViewDelegates.swift; path = Sources/JTAppleCalendar/JTACCollectionMonthViewDelegates.swift; sourceTree = "<group>"; };
 		E0FD6F2B2B76DC0201CFD8FEFC0595A0 /* Pods-OTT */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-OTT"; path = Pods_OTT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E53A4BF8B0FCB2432FA1C83666E3879B /* JTAppleCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JTAppleCalendar-dummy.m"; sourceTree = "<group>"; };
+		E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E48FFF70AEAFC82351E25924CC6538DE /* JTACMonthView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthView.swift; path = Sources/JTAppleCalendar/JTACMonthView.swift; sourceTree = "<group>"; };
 		E5933A2B61F045389F45D2942BC1003C /* Pods-OTT-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OTT-Info.plist"; sourceTree = "<group>"; };
-		EA935B857047658A06DA831C217D77CB /* DropDown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-umbrella.h"; sourceTree = "<group>"; };
-		EDA7749FDE723499B39CD321712BC4C0 /* DropDown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.release.xcconfig; sourceTree = "<group>"; };
-		EFE385BBD2E5CA922A15B1C35D8913E7 /* DropDown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDown.swift; path = DropDown/src/DropDown.swift; sourceTree = "<group>"; };
-		F5E2FD0070354C33A36B76BFC841BD10 /* DropDownCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDownCell.swift; path = DropDown/src/DropDownCell.swift; sourceTree = "<group>"; };
+		E9B46AFA619910351F0CD6154187EA01 /* JTACMonthQueryFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthQueryFunctions.swift; path = Sources/JTAppleCalendar/JTACMonthQueryFunctions.swift; sourceTree = "<group>"; };
+		ED2A56103FE44E7FF71EA5C9DFB9E2B7 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		EEAE2DDA7268026F30A99C3C269BD398 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		F596484B6CCA0E161690BBF8EBE46742 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		F682C1F813D2B3B42295177D64571932 /* DPDConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDConstants.swift; path = DropDown/helpers/DPDConstants.swift; sourceTree = "<group>"; };
+		F6BDD7083441E88988B1F9945BEBE370 /* DropDown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-prefix.pch"; sourceTree = "<group>"; };
+		FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		59D809A4A69B99E009C7918621826EC4 /* Frameworks */ = {
+		3977393A21672F0FBC6F1193739E0D15 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B6DB2E21EC68F6F45524DD45CBF98D0 /* Foundation.framework in Frameworks */,
+				325CCDB295FFA016638075B5D2CEDD5C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39D530C2A3085A1033683EC9AE0BC313 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33F86FAB918B148A63A1575667F9B570 /* CFNetwork.framework in Frameworks */,
+				9C0BE8FA0030B2BC1DF7C159FA059389 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,34 +270,148 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B1217E9E7BEFDBC216560AA18CA76E8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				707FCC7B01202983A27639D7B1054B22 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		38236FD725650957069368AB07C528D1 /* Pods */ = {
+		1430027DB9D97D6E3BF5BB122F412CF9 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A96AB4E98BF39B36BF02DA40E44E51E7 /* DropDown */,
-				FB67FB1FC70FA27968DC964699E0BCCA /* JTAppleCalendar */,
+				CC0675594F873560FEE064787C8252DC /* Alamofire.modulemap */,
+				98ABE4A8ACCBA89791ABAC28CEC4BF0B /* Alamofire-dummy.m */,
+				3B53AFE0273A9DCF1A0A5B7A18BFB735 /* Alamofire-Info.plist */,
+				2A6BF973BF9AE3914BEE31645B135DB9 /* Alamofire-prefix.pch */,
+				95BF0EA36E765505B761A156733ADC6B /* Alamofire-umbrella.h */,
+				48BBF8A5B2093ACE5BDBE3023BA3F1C0 /* Alamofire.debug.xcconfig */,
+				9907B4D530B4E968F821C458735EB734 /* Alamofire.release.xcconfig */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
 			sourceTree = "<group>";
 		};
-		400FEACE91D1683378D04CC31FBBD0F1 /* Products */ = {
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				61C8CC330A5CA84DA2F5F1D32AB07069 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1D7D86D8F4F9890895FE9BE03DCB0CE4 /* JTAppleCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				4ECA2EAEFC0B82C8919CD958E8E7C93D /* CalendarEnums.swift */,
+				1901D27F403EEE4BF66FE19C24528BAB /* CalendarStructs.swift */,
+				A4BBE8AF88865A35F1831B10C2558A29 /* GlobalFunctionsAndExtensions.swift */,
+				DE6D2A33BC7FAA788B76787DCD38DBCC /* JTACCollectionMonthViewDelegates.swift */,
+				7BEDAD0B73D105F95A87681294832196 /* JTACCollectionYearViewDelegates.swift */,
+				BCCE5AF0433E67B689CE9236C2B81EB4 /* JTACDayCell.swift */,
+				6F440BA80DC38025AE88090CED7A1EB5 /* JTACInteractionMonthFunctions.swift */,
+				B850EA1D637D3C2E87A114EF1F7AEF1B /* JTACInteractionYearFunctions.swift */,
+				BDEBFA31E033D653AEABABC2C8427BEA /* JTACMonthActionFunctions.swift */,
+				9EF476798560CFFD65A4569875A4E0AB /* JTACMonthCell.swift */,
+				B07242C94320DA782EE660C3C7397E8B /* JTACMonthDelegateProtocol.swift */,
+				8F6CF2E7D4A127527F7E8C5C9611CEA4 /* JTACMonthLayout.swift */,
+				02FABD699FE031842349948CCAE06DDB /* JTACMonthLayoutHorizontalCalendar.swift */,
+				DC1A3FF925A164C3E64D908734454002 /* JTACMonthLayoutProtocol.swift */,
+				D4914181FB93040CEB476A4077EE59D6 /* JTACMonthLayoutVerticalCalendar.swift */,
+				E9B46AFA619910351F0CD6154187EA01 /* JTACMonthQueryFunctions.swift */,
+				CFA5460D648F1E2E774831C6600FA9A0 /* JTACMonthReusableView.swift */,
+				E48FFF70AEAFC82351E25924CC6538DE /* JTACMonthView.swift */,
+				8990C0F1564829725C4DF18839120059 /* JTACMonthViewProtocols.swift */,
+				AE0A67D2A0036F6249108182B0AA4DAB /* JTACScrollViewDelegates.swift */,
+				CEC80934008B887BED2C55195768F018 /* JTACVariables.swift */,
+				D54B83370752BFAF4A422BE1719E94AD /* JTACYearView.swift */,
+				444F540FBAE7F777784D909428AE8F7F /* JTACYearViewProtocols.swift */,
+				55FCA506713CE0C4553D9B6BB096DF3C /* Support Files */,
+			);
+			name = JTAppleCalendar;
+			path = JTAppleCalendar;
+			sourceTree = "<group>";
+		};
+		4031411156C48854F2FFED5F8D751809 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */,
 				9B6725B782188F18CB76A740433F14E4 /* DropDown */,
 				A0C8E428D980D3C9293A3C2BF740F0CD /* JTAppleCalendar */,
 				E0FD6F2B2B76DC0201CFD8FEFC0595A0 /* Pods-OTT */,
+				E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+		55FCA506713CE0C4553D9B6BB096DF3C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+				D02A010E7067EDF2A1D64BA9051FC455 /* JTAppleCalendar.modulemap */,
+				8E3136B796BD3862E127072425F89E2E /* JTAppleCalendar-dummy.m */,
+				138747E836B8B33067097B0870B65794 /* JTAppleCalendar-Info.plist */,
+				23EFB0347DAB81370339E500CDB4E36F /* JTAppleCalendar-prefix.pch */,
+				BAC82D2109AD900F6594D0046F9D32D1 /* JTAppleCalendar-umbrella.h */,
+				B2064C1E1D5EC416A52D5B089E1BD291 /* JTAppleCalendar.debug.xcconfig */,
+				D94858CDCC868D3490A185ABA2A234AB /* JTAppleCalendar.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JTAppleCalendar";
+			sourceTree = "<group>";
+		};
+		5CDBDF1E94A61ECFCB378C9C52CE3E3E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9152B3D594976CCB0FB398A1C17E292A /* Alamofire */,
+				5F11E75B4EF5DBA604A8B99F414D831A /* DropDown */,
+				1D7D86D8F4F9890895FE9BE03DCB0CE4 /* JTAppleCalendar */,
+				923500F39C81D4BA029A1130E43CAE84 /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5F11E75B4EF5DBA604A8B99F414D831A /* DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				F682C1F813D2B3B42295177D64571932 /* DPDConstants.swift */,
+				530D80B3111E24DCBE0A72CC9C10F155 /* DPDKeyboardListener.swift */,
+				6208EB8BBF45ECA115BB03C5457A2FF1 /* DPDUIView+Extension.swift */,
+				A243EF7E592A65E29A75172536065E7E /* DropDown.swift */,
+				CB9A72DA3780DF092883891362C216D8 /* DropDown+Appearance.swift */,
+				9B0BB5910DEEB46359F71C4C25168AEB /* DropDownCell.swift */,
+				FB404D692F2BDDC298CF71B116E6FFA7 /* Resources */,
+				7540A1D5FCC54C0CF548164B8311EF12 /* Support Files */,
+			);
+			name = DropDown;
+			path = DropDown;
+			sourceTree = "<group>";
+		};
+		61C8CC330A5CA84DA2F5F1D32AB07069 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8D3D57353834825F7B52B816066B7789 /* CFNetwork.framework */,
+				FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		7540A1D5FCC54C0CF548164B8311EF12 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BC148B303D76EFD92A1209BFA3FD024 /* DropDown.modulemap */,
+				6576ADCC1BF7EE33F0533B2A7C45444D /* DropDown-dummy.m */,
+				DA4CA4FD9F5426505415FD3D432BC38F /* DropDown-Info.plist */,
+				F6BDD7083441E88988B1F9945BEBE370 /* DropDown-prefix.pch */,
+				4C688DBB5B52117DB21D695D20E3E1DA /* DropDown-umbrella.h */,
+				0FCD481406FB74217CDBE264696DC9C5 /* DropDown.debug.xcconfig */,
+				AD74C0EB372864C67FB389D2FE497CA4 /* DropDown.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DropDown";
 			sourceTree = "<group>";
 		};
 		7ABD99C7185E49BD1959170D69EE46B3 /* Targets Support Files */ = {
@@ -189,77 +422,84 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		943AD15B6E70C0D07B68AEE32D81C940 /* Resources */ = {
+		8B2D4A3C50920BC346526509283A4F11 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6C171CC13C37D7C3F0CE4A1ED3645CD7 /* DropDownCell.xib */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		A54042BEACC04A2F909CC4E8ED8B27CA /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D1BC041F7D711358B369FC17CB08F63D /* DropDown.modulemap */,
-				B88D4DB1F7A70DF1F607E5D64EBDB9CD /* DropDown-dummy.m */,
-				066B29C201E70C65C4D47EE558B6A046 /* DropDown-Info.plist */,
-				CED188622A61351F29FA4D2A73BDB6FA /* DropDown-prefix.pch */,
-				EA935B857047658A06DA831C217D77CB /* DropDown-umbrella.h */,
-				42840D3395F798E3DEAB9D76CBA3C36C /* DropDown.debug.xcconfig */,
-				EDA7749FDE723499B39CD321712BC4C0 /* DropDown.release.xcconfig */,
+				F596484B6CCA0E161690BBF8EBE46742 /* SwiftyJSON.modulemap */,
+				ED2A56103FE44E7FF71EA5C9DFB9E2B7 /* SwiftyJSON-dummy.m */,
+				2EBF0B9C9AEAE524D83E0260D695FE3B /* SwiftyJSON-Info.plist */,
+				CB3CDEEFD749C5A5CB86B446AB68BDBE /* SwiftyJSON-prefix.pch */,
+				2D438E70100B6F16B71C56CABA0373D8 /* SwiftyJSON-umbrella.h */,
+				7B10F4DCCFB2373E78D880B7748A3610 /* SwiftyJSON.debug.xcconfig */,
+				2E12A490D3E525F6B3E2C79B33685FC1 /* SwiftyJSON.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/DropDown";
+			path = "../Target Support Files/SwiftyJSON";
 			sourceTree = "<group>";
 		};
-		A96AB4E98BF39B36BF02DA40E44E51E7 /* DropDown */ = {
+		9152B3D594976CCB0FB398A1C17E292A /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				7E2E38EA7862C01E1E06994607F24213 /* DPDConstants.swift */,
-				331010E7F18C51E13B63AF66591FFBA5 /* DPDKeyboardListener.swift */,
-				2372075D134A26F132801F7B8C2A4ECA /* DPDUIView+Extension.swift */,
-				EFE385BBD2E5CA922A15B1C35D8913E7 /* DropDown.swift */,
-				8F013393ABF8EA9479B2D81BD92B26B3 /* DropDown+Appearance.swift */,
-				F5E2FD0070354C33A36B76BFC841BD10 /* DropDownCell.swift */,
-				943AD15B6E70C0D07B68AEE32D81C940 /* Resources */,
-				A54042BEACC04A2F909CC4E8ED8B27CA /* Support Files */,
+				4D930C8EA986450858480F7D5B4505B7 /* AFError.swift */,
+				958A45979EC53C0B80E71D1718970D06 /* Alamofire.swift */,
+				BC14669488D74069E07AF55716872318 /* AlamofireExtended.swift */,
+				7F07795B10D7FAC327F5D489119175D4 /* AuthenticationInterceptor.swift */,
+				BDEDF63FCF99F2ED7940E2541A846C93 /* CachedResponseHandler.swift */,
+				0F9CC92138A1D1136B7899ACC9D7D2E9 /* Combine.swift */,
+				EEAE2DDA7268026F30A99C3C269BD398 /* DispatchQueue+Alamofire.swift */,
+				1FD1B8B0D7C6386C937860EDECADE2C5 /* EventMonitor.swift */,
+				8CB772BEDC073E95D77F92E97DE1374B /* HTTPHeaders.swift */,
+				0C8C57FDB6140893380681B558F55FD7 /* HTTPMethod.swift */,
+				02B398E3D20DE5DFAE72DDC317B245EB /* MultipartFormData.swift */,
+				D304908A04E22522C6E51C47227BE818 /* MultipartUpload.swift */,
+				53A9875072CED7DC8A3FDED8F99B8F01 /* NetworkReachabilityManager.swift */,
+				CA1CD204BB22623CE34BD146D2BE0D24 /* Notifications.swift */,
+				005228CE9DDF872BE73DED536BD32EF3 /* OperationQueue+Alamofire.swift */,
+				D36883C797D685931A8AAF92B8D4813D /* ParameterEncoder.swift */,
+				C0C6AFAB3D09390D170E94E47A505CC8 /* ParameterEncoding.swift */,
+				DB4AD521A0DDBA58F12BBD09EC9A0903 /* Protected.swift */,
+				58B43FD4B318411AF1F190C389134906 /* RedirectHandler.swift */,
+				05D450246FCB38752724589D98006DEF /* Request.swift */,
+				D09D8BFAE056C3B4D923AE06533A0431 /* RequestInterceptor.swift */,
+				538A33689A8F2F1C3B815CD2B14E320F /* RequestTaskMap.swift */,
+				D2F171D5B4513CD546592C56E35F3C6B /* Response.swift */,
+				823D993004B0E1E4BCD5B3FB7ACFE7CA /* ResponseSerialization.swift */,
+				D679603CA281EB812964457935E7830E /* Result+Alamofire.swift */,
+				950AB63F9510B10BB1E6A7541D6EB78C /* RetryPolicy.swift */,
+				1695FD0268DDA455F67A702363906B10 /* ServerTrustEvaluation.swift */,
+				72504D7EA1AC473CD22FE350E8625766 /* Session.swift */,
+				5EE1BE5BB9990D93A503605C6408C897 /* SessionDelegate.swift */,
+				14C3F05B9E2C3A58E2E44126957A7EA7 /* StringEncoding+Alamofire.swift */,
+				B3A6D81AF2E6A968ED8999F292AB6686 /* URLConvertible+URLRequestConvertible.swift */,
+				792650B7EF34792E47E707718D456E32 /* URLEncodedFormEncoder.swift */,
+				5915D52CF9AD0B0749870F9558203562 /* URLRequest+Alamofire.swift */,
+				7916D316C8D3359D2D04E39BDA0AD65A /* URLSessionConfiguration+Alamofire.swift */,
+				5D67A7072D16349DB0CD3F1167C15C0F /* Validation.swift */,
+				1430027DB9D97D6E3BF5BB122F412CF9 /* Support Files */,
 			);
-			name = DropDown;
-			path = DropDown;
+			name = Alamofire;
+			path = Alamofire;
 			sourceTree = "<group>";
 		};
-		B285A30D539DAB145C9AFB7503B4B201 /* Support Files */ = {
+		923500F39C81D4BA029A1130E43CAE84 /* SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
-				7C27AE93D297316D44E4C868029BACEB /* JTAppleCalendar.modulemap */,
-				E53A4BF8B0FCB2432FA1C83666E3879B /* JTAppleCalendar-dummy.m */,
-				9EF5E64147D538C59AA452CAB811EC00 /* JTAppleCalendar-Info.plist */,
-				CC7A46B01AE8FE3146D89BFDC1FEAA80 /* JTAppleCalendar-prefix.pch */,
-				22FCED25324467D0EC38D51BC17929C3 /* JTAppleCalendar-umbrella.h */,
-				9FDACA85816A0693AD564211D4C7BCF8 /* JTAppleCalendar.debug.xcconfig */,
-				19339EA34BF9A3F8CEBC629A3E23A006 /* JTAppleCalendar.release.xcconfig */,
+				D3D911380E230D0B9F55F6D005102852 /* SwiftyJSON.swift */,
+				8B2D4A3C50920BC346526509283A4F11 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/JTAppleCalendar";
+			name = SwiftyJSON;
+			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				38236FD725650957069368AB07C528D1 /* Pods */,
-				400FEACE91D1683378D04CC31FBBD0F1 /* Products */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				5CDBDF1E94A61ECFCB378C9C52CE3E3E /* Pods */,
+				4031411156C48854F2FFED5F8D751809 /* Products */,
 				7ABD99C7185E49BD1959170D69EE46B3 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		DCE07FC72C618FF78873DB14150C7202 /* Pods-OTT */ = {
@@ -279,46 +519,38 @@
 			path = "Target Support Files/Pods-OTT";
 			sourceTree = "<group>";
 		};
-		FB67FB1FC70FA27968DC964699E0BCCA /* JTAppleCalendar */ = {
+		FB404D692F2BDDC298CF71B116E6FFA7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C5FE2986A8D0E1C28508816B265EEAD8 /* CalendarEnums.swift */,
-				17218B2FFF69DF11B4B9B7BD96016C05 /* CalendarStructs.swift */,
-				CBA459B05929AD6D05279F7AAE57CFAE /* GlobalFunctionsAndExtensions.swift */,
-				569772F597B13C0B688AA1F051B7DB55 /* JTACCollectionMonthViewDelegates.swift */,
-				3DCAAD32CD83DF2B9B6B5889C2D8266D /* JTACCollectionYearViewDelegates.swift */,
-				3C7502813B22E1376352ED842B0AF532 /* JTACDayCell.swift */,
-				0D42CEE167FEB12BE8C4DE6DDCBEDCD8 /* JTACInteractionMonthFunctions.swift */,
-				37CFB109541AC5AD5F03D318A9860A4A /* JTACInteractionYearFunctions.swift */,
-				CF07028CB3D6F9F8C9480D7D46980A97 /* JTACMonthActionFunctions.swift */,
-				8965F3610943128772F2FAA8E24066C7 /* JTACMonthCell.swift */,
-				1DD0CCBE0F6652B51670F7CE0B226CE9 /* JTACMonthDelegateProtocol.swift */,
-				94CB6FD5541C416D60B848DEAFFC87C8 /* JTACMonthLayout.swift */,
-				BDC6D54FF5EED398B11641773B441B43 /* JTACMonthLayoutHorizontalCalendar.swift */,
-				670FD5B7D33E76CB486394D1309008B1 /* JTACMonthLayoutProtocol.swift */,
-				6139726CD073898EF1942620AF433E34 /* JTACMonthLayoutVerticalCalendar.swift */,
-				43B25FE1B9FE37CF602BE81174982529 /* JTACMonthQueryFunctions.swift */,
-				7CD6B55F5314E3DA22E75C0BF034B171 /* JTACMonthReusableView.swift */,
-				84E2D127B973F1D0D8891CAE7DC1E088 /* JTACMonthView.swift */,
-				578EC2C3BC64B0CD4A8DC60CF708C13E /* JTACMonthViewProtocols.swift */,
-				BDAD7DB62735A93B0A0D962DEB412B00 /* JTACScrollViewDelegates.swift */,
-				100A1C62B3E340511D182D372CCA49D6 /* JTACVariables.swift */,
-				1EC5CD47448ABCB5296E899735FF251B /* JTACYearView.swift */,
-				60A2BC4E77C1742129CE934E4968FA75 /* JTACYearViewProtocols.swift */,
-				B285A30D539DAB145C9AFB7503B4B201 /* Support Files */,
+				1DFD5AD18A31B91DC18A875675816C0E /* DropDownCell.xib */,
 			);
-			name = JTAppleCalendar;
-			path = JTAppleCalendar;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2FF1CDAD02B166E983C768F0DF45C025 /* Headers */ = {
+		0A1FB8D7C932509856022A05103FD716 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CA4AD1EFAC3DDEBDA9D40D7A8D6F830 /* Pods-OTT-umbrella.h in Headers */,
+				05A58104F8565868994086F75FDDA3A9 /* Pods-OTT-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14FF1799C5ADBC71E1DB963F2AF8853D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B399DCF32F8FE4F09B03B6E7B65E0D1 /* Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41145698F7DF35B05606D01197454CFC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A115142039C23F91827E6961CC479F05 /* SwiftyJSON-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,22 +593,42 @@
 		};
 		8F18EE4D9A9111CF35A0AB53BC602E27 /* Pods-OTT */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F0F4816A57A4C8EBE854CB4C15174DD3 /* Build configuration list for PBXNativeTarget "Pods-OTT" */;
+			buildConfigurationList = 56E5D0072AFA2316B42D7A2CEB1134CD /* Build configuration list for PBXNativeTarget "Pods-OTT" */;
 			buildPhases = (
-				2FF1CDAD02B166E983C768F0DF45C025 /* Headers */,
-				943159E55D6FD9D8E3AB8B1E2C106548 /* Sources */,
-				59D809A4A69B99E009C7918621826EC4 /* Frameworks */,
-				A929B6352C35BC833157F40E5463E7F9 /* Resources */,
+				0A1FB8D7C932509856022A05103FD716 /* Headers */,
+				C73D4038A5E20BB573B938F230D648CE /* Sources */,
+				B1217E9E7BEFDBC216560AA18CA76E8D /* Frameworks */,
+				9A24B59318BB6A571ED171BB009157B7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FDBE8F66DDE6281DC74E80FF3CCBFEAC /* PBXTargetDependency */,
-				FDCEA42A5A130AE8FEB107B964BBBBC8 /* PBXTargetDependency */,
+				22FA4B2D66D62634A5408DBF9CBDE95C /* PBXTargetDependency */,
+				8B5055663310692AC391E4667876B37E /* PBXTargetDependency */,
+				BBF0866FB440C85DE4E6D006718C37E5 /* PBXTargetDependency */,
+				1EC479001811029D05F241BA20B71F01 /* PBXTargetDependency */,
 			);
 			name = "Pods-OTT";
 			productName = Pods_OTT;
 			productReference = E0FD6F2B2B76DC0201CFD8FEFC0595A0 /* Pods-OTT */;
+			productType = "com.apple.product-type.framework";
+		};
+		D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2490E828D479276A7E0AFBA515DD77FA /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				41145698F7DF35B05606D01197454CFC /* Headers */,
+				7B5BEB32F210EFE38F7D58FF8A1CC2DE /* Sources */,
+				3977393A21672F0FBC6F1193739E0D15 /* Frameworks */,
+				B05597C458D738E12F170EAC515F8483 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON */;
 			productType = "com.apple.product-type.framework";
 		};
 		E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */ = {
@@ -397,6 +649,24 @@
 			productReference = 9B6725B782188F18CB76A740433F14E4 /* DropDown */;
 			productType = "com.apple.product-type.framework";
 		};
+		EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C98220D3187BF01A20E296DC128BED4 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				14FF1799C5ADBC71E1DB963F2AF8853D /* Headers */,
+				5FE9836A67EA3E51CA889A1AB95BC874 /* Sources */,
+				39D530C2A3085A1033683EC9AE0BC313 /* Frameworks */,
+				93ECA2D9F79614966DFA76280ABFEF67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -415,19 +685,35 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 400FEACE91D1683378D04CC31FBBD0F1 /* Products */;
+			productRefGroup = 4031411156C48854F2FFED5F8D751809 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */,
 				E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */,
 				421B6ABF460857FE6CA2905EFB5A4F74 /* JTAppleCalendar */,
 				8F18EE4D9A9111CF35A0AB53BC602E27 /* Pods-OTT */,
+				D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A929B6352C35BC833157F40E5463E7F9 /* Resources */ = {
+		93ECA2D9F79614966DFA76280ABFEF67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A24B59318BB6A571ED171BB009157B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B05597C458D738E12F170EAC515F8483 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -497,35 +783,137 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		943159E55D6FD9D8E3AB8B1E2C106548 /* Sources */ = {
+		5FE9836A67EA3E51CA889A1AB95BC874 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B41653FA2316873CA0BEF04769052276 /* Pods-OTT-dummy.m in Sources */,
+				A664924D6CCE2922A3F81EC932F4D476 /* AFError.swift in Sources */,
+				FEDBAD32E2EDA85AD6E362B82892A74A /* Alamofire.swift in Sources */,
+				1773084DECF68CADD45567FBEC56036D /* Alamofire-dummy.m in Sources */,
+				A3153333FC136836B0028E6AB2A56BEE /* AlamofireExtended.swift in Sources */,
+				F36D96A4346C90A2D11CB3B6A2ECF4CF /* AuthenticationInterceptor.swift in Sources */,
+				13E62623092B680C6A5C349D48B8A4FD /* CachedResponseHandler.swift in Sources */,
+				97584BC08D2B494417BDEE268CFF38C9 /* Combine.swift in Sources */,
+				DCD0C33A2B50811D53CF68F021284B47 /* DispatchQueue+Alamofire.swift in Sources */,
+				9CFDA7C92E0EEA31F709663B0E727ABA /* EventMonitor.swift in Sources */,
+				52BE6F747C26DF2A24532458E55DC10F /* HTTPHeaders.swift in Sources */,
+				02621C4B82398D0657F474E21493A3A2 /* HTTPMethod.swift in Sources */,
+				C16A047C4E8D856309A486182A490993 /* MultipartFormData.swift in Sources */,
+				30A331CD9286145E92DB11D671664C63 /* MultipartUpload.swift in Sources */,
+				B6473B8E8353317F75D6800D4F7054CB /* NetworkReachabilityManager.swift in Sources */,
+				471611F482CDC15BF464E3BA9CB83968 /* Notifications.swift in Sources */,
+				2550F0D474DE846FEC5C76CBE85F927E /* OperationQueue+Alamofire.swift in Sources */,
+				8B9CDBE3FFD712120CD66DD8B06C44E4 /* ParameterEncoder.swift in Sources */,
+				4634BA717BFCE522E5B42304C6A78B5D /* ParameterEncoding.swift in Sources */,
+				02DB462B121245593CE653B9B377F970 /* Protected.swift in Sources */,
+				DD58A00EACBEE274C381B491519C6B8C /* RedirectHandler.swift in Sources */,
+				E0C65E16219718869CD2AFCA2C5465CB /* Request.swift in Sources */,
+				F63BE0585331CAA3482EF736803F8243 /* RequestInterceptor.swift in Sources */,
+				1D17B83410DC98911D539F2BD5254C05 /* RequestTaskMap.swift in Sources */,
+				C7F66519CE6148F21D7DB11423F1D34D /* Response.swift in Sources */,
+				941822CDF68EB8F4D49F150457A82616 /* ResponseSerialization.swift in Sources */,
+				A4F1202CE5BBE79F3BBCAE3D2B16BC03 /* Result+Alamofire.swift in Sources */,
+				512FAFBD71830F126224C033B6C45F4E /* RetryPolicy.swift in Sources */,
+				8F9E1EEF2FE52E3231A769722D5C4148 /* ServerTrustEvaluation.swift in Sources */,
+				EC11B17DA78F7EEBEBC3EFAF68C6DF9F /* Session.swift in Sources */,
+				688337B18659C4BF722F87AFC4FEEF81 /* SessionDelegate.swift in Sources */,
+				E1769C267E82B0C24FE0FFBF949F0A6E /* StringEncoding+Alamofire.swift in Sources */,
+				5E594FA3290D3D70F500572D0AC100DB /* URLConvertible+URLRequestConvertible.swift in Sources */,
+				F5D2A31C7EB1DE010771140B6E7ABAD8 /* URLEncodedFormEncoder.swift in Sources */,
+				B89D1C69742F61878115334A1D2DFFE7 /* URLRequest+Alamofire.swift in Sources */,
+				E857ADCAD7B647883D5B2AEC3F16D1D5 /* URLSessionConfiguration+Alamofire.swift in Sources */,
+				D15FEA31AA9625BBF041FB91E48A9995 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B5BEB32F210EFE38F7D58FF8A1CC2DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3CEE8324948497036C4E123B21CBC59 /* SwiftyJSON.swift in Sources */,
+				5FA526557719FDBE81B1974B113CF600 /* SwiftyJSON-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C73D4038A5E20BB573B938F230D648CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				989850EABB0E8A60A15A68F152D28B30 /* Pods-OTT-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FDBE8F66DDE6281DC74E80FF3CCBFEAC /* PBXTargetDependency */ = {
+		1EC479001811029D05F241BA20B71F01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */;
+			targetProxy = D66AA62EBE660C26C1D70D7E89CD5331 /* PBXContainerItemProxy */;
+		};
+		22FA4B2D66D62634A5408DBF9CBDE95C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = 53CB29AC6C1D3BF85D6080224D1AE54A /* PBXContainerItemProxy */;
+		};
+		8B5055663310692AC391E4667876B37E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DropDown;
 			target = E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */;
-			targetProxy = 94631905B5127BD55D480CBC83A6DD97 /* PBXContainerItemProxy */;
+			targetProxy = 886E5919208BB7ABE21A1BF6FAFD1C6C /* PBXContainerItemProxy */;
 		};
-		FDCEA42A5A130AE8FEB107B964BBBBC8 /* PBXTargetDependency */ = {
+		BBF0866FB440C85DE4E6D006718C37E5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JTAppleCalendar;
 			target = 421B6ABF460857FE6CA2905EFB5A4F74 /* JTAppleCalendar */;
-			targetProxy = 84CBFF9D00254FB6E889E112D8EE6D62 /* PBXContainerItemProxy */;
+			targetProxy = 617F072C50A9FD971350B6EDC7F2038D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0508662DC5AED43BFACC23BDA2BBC767 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA213722D9B4D54F6429A2413F05929B /* Pods-OTT.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OTT/Pods-OTT-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OTT/Pods-OTT.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		5189747217983D35A1BE6D02ED720BE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9FDACA85816A0693AD564211D4C7BCF8 /* JTAppleCalendar.debug.xcconfig */;
+			baseConfigurationReference = B2064C1E1D5EC416A52D5B089E1BD291 /* JTAppleCalendar.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -560,7 +948,7 @@
 		};
 		7581894D0D131F2698C76597F81986E9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19339EA34BF9A3F8CEBC629A3E23A006 /* JTAppleCalendar.release.xcconfig */;
+			baseConfigurationReference = D94858CDCC868D3490A185ABA2A234AB /* JTAppleCalendar.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -593,6 +981,79 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		79FDB89F6CA57D6734D528EAF266BD7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9907B4D530B4E968F821C458735EB734 /* Alamofire.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7FF16114A57857A6C972164BF7695C13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F0FDC1CA65626E805BA2A99D352BBCF /* Pods-OTT.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OTT/Pods-OTT-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OTT/Pods-OTT.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -722,12 +1183,10 @@
 			};
 			name = Release;
 		};
-		B8802D3F629422449A0C596FCBC8F93F /* Debug */ = {
+		A9EEBF12B0E3733A640B1F7870912751 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F0FDC1CA65626E805BA2A99D352BBCF /* Pods-OTT.debug.xcconfig */;
+			baseConfigurationReference = 2E12A490D3E525F6B3E2C79B33685FC1 /* SwiftyJSON.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -736,23 +1195,57 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-OTT/Pods-OTT-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-OTT/Pods-OTT.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BD0E5E3EFB0F4CCE246B60BB04FAB85B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B10F4DCCFB2373E78D880B7748A3610 /* SwiftyJSON.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -761,7 +1254,7 @@
 		};
 		C24518E891FAA59668669823639498EB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EDA7749FDE723499B39CD321712BC4C0 /* DropDown.release.xcconfig */;
+			baseConfigurationReference = AD74C0EB372864C67FB389D2FE497CA4 /* DropDown.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -794,11 +1287,10 @@
 			};
 			name = Release;
 		};
-		D17C2374003FF54CD7FFCF1A18FD73E6 /* Release */ = {
+		DDE66E9EF2650949C1F28ED6BFEEEFED /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA213722D9B4D54F6429A2413F05929B /* Pods-OTT.release.xcconfig */;
+			baseConfigurationReference = 48BBF8A5B2093ACE5BDBE3023BA3F1C0 /* Alamofire.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -808,33 +1300,31 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-OTT/Pods-OTT-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-OTT/Pods-OTT.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.5;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		E2CDE7BD114C532701D2E79C5CB4CAA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42840D3395F798E3DEAB9D76CBA3C36C /* DropDown.debug.xcconfig */;
+			baseConfigurationReference = 0FCD481406FB74217CDBE264696DC9C5 /* DropDown.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -869,6 +1359,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2490E828D479276A7E0AFBA515DD77FA /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD0E5E3EFB0F4CCE246B60BB04FAB85B /* Debug */,
+				A9EEBF12B0E3733A640B1F7870912751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		37F166FA9FAB0EF149E17B95CBA81886 /* Build configuration list for PBXNativeTarget "JTAppleCalendar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -896,11 +1395,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F0F4816A57A4C8EBE854CB4C15174DD3 /* Build configuration list for PBXNativeTarget "Pods-OTT" */ = {
+		56E5D0072AFA2316B42D7A2CEB1134CD /* Build configuration list for PBXNativeTarget "Pods-OTT" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B8802D3F629422449A0C596FCBC8F93F /* Debug */,
-				D17C2374003FF54CD7FFCF1A18FD73E6 /* Release */,
+				7FF16114A57857A6C972164BF7695C13 /* Debug */,
+				0508662DC5AED43BFACC23BDA2BBC767 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C98220D3187BF01A20E296DC128BED4 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDE66E9EF2650949C1F28ED6BFEEEFED /* Debug */,
+				79FDB89F6CA57D6734D528EAF266BD7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
