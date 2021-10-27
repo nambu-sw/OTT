@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+<<<<<<< HEAD
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Image references" minToolsVersion="12.0"/>
+=======
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+>>>>>>> fb18faf04faf890b906f4f06df2f6dbf98568d6d
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -269,11 +274,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+<<<<<<< HEAD
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0eV-5Y-fqo">
                                 <rect key="frame" x="52" y="215" width="320" height="496"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="496" id="6rB-bQ-aKw"/>
+=======
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3u-pw-wzr">
+                                <rect key="frame" x="24" y="738" width="367" height="124"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="UploadClothesButton"/>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0eV-5Y-fqo">
+                                <rect key="frame" x="47" y="200" width="320" height="530"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="530" id="6rB-bQ-aKw"/>
+>>>>>>> fb18faf04faf890b906f4f06df2f6dbf98568d6d
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="50" id="UcB-OU-KJJ">
@@ -367,9 +385,17 @@
                         <constraints>
                             <constraint firstItem="Cbk-32-qi6" firstAttribute="leading" secondItem="JjD-Za-U9B" secondAttribute="leadingMargin" id="Sj6-CL-ZIH"/>
                             <constraint firstItem="Cbk-32-qi6" firstAttribute="top" secondItem="N2h-S7-Za5" secondAttribute="top" constant="43" id="Ygy-c7-FDL"/>
+<<<<<<< HEAD
                             <constraint firstItem="0eV-5Y-fqo" firstAttribute="centerX" secondItem="JjD-Za-U9B" secondAttribute="centerX" constant="5" id="uUy-CR-RaT"/>
                             <constraint firstItem="0eV-5Y-fqo" firstAttribute="centerY" secondItem="JjD-Za-U9B" secondAttribute="centerY" constant="15" id="wGg-Ve-03W"/>
                             <constraint firstItem="0eV-5Y-fqo" firstAttribute="leading" secondItem="N2h-S7-Za5" secondAttribute="leading" constant="52" id="xsl-zc-spX"/>
+=======
+                            <constraint firstItem="0eV-5Y-fqo" firstAttribute="centerX" secondItem="y3u-pw-wzr" secondAttribute="centerX" id="l9S-C3-uBp"/>
+                            <constraint firstItem="0eV-5Y-fqo" firstAttribute="centerX" secondItem="JjD-Za-U9B" secondAttribute="centerX" id="uUy-CR-RaT"/>
+                            <constraint firstItem="0eV-5Y-fqo" firstAttribute="centerY" secondItem="JjD-Za-U9B" secondAttribute="centerY" constant="17" id="wGg-Ve-03W"/>
+                            <constraint firstItem="0eV-5Y-fqo" firstAttribute="leading" secondItem="N2h-S7-Za5" secondAttribute="leading" constant="47" id="xsl-zc-spX"/>
+                            <constraint firstItem="y3u-pw-wzr" firstAttribute="top" secondItem="0eV-5Y-fqo" secondAttribute="bottom" constant="8" id="yAo-Wb-frC"/>
+>>>>>>> fb18faf04faf890b906f4f06df2f6dbf98568d6d
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fLo-al-eGV"/>
@@ -542,6 +568,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="PlusButton"/>
+                                <connections>
+                                    <action selector="saveImage:" destination="JSK-sG-Mpk" eventType="touchUpInside" id="bnc-SV-i7M"/>
+                                </connections>
                             </button>
                             <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5PB-XE-JjW">
                                 <rect key="frame" x="41" y="637" width="215" height="57"/>
@@ -555,6 +584,7 @@
                                             <attributes>
                                                 <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="28" name="NotoSerifKR-ExtraLight"/>
+                                                <font key="NSFont" metaFont="system" size="28"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -599,6 +629,7 @@
                     <navigationItem key="navigationItem" id="gKZ-td-xXr"/>
                     <connections>
                         <outlet property="categoryBtn" destination="5PB-XE-JjW" id="52u-mQ-f5g"/>
+                        <outlet property="descTf" destination="KP4-qP-LBN" id="mxM-Mm-Byu"/>
                         <outlet property="imageView" destination="JdT-oc-uFs" id="enU-he-xYr"/>
                     </connections>
                 </viewController>
@@ -785,7 +816,12 @@
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="plus.circle" catalog="system" width="128" height="121"/>
         <image name="tshirt" catalog="system" width="128" height="99"/>
+<<<<<<< HEAD
         <image name="로딩 옷장 image" width="294" height="667"/>
+=======
+        <image name="로딩 옷장 image" width="294" height="667"/>
+        <image name="설명추가문" width="230" height="16"/>
+>>>>>>> fb18faf04faf890b906f4f06df2f6dbf98568d6d
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
