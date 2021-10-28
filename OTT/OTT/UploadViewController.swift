@@ -31,6 +31,10 @@ class UploadViewController: UIViewController {
         picker.delegate = self
     }
     
+    @IBAction func actBack(_ sender: Any) {
+        self.dismiss(animated: true)
+    }
+    
     @IBAction func dropdown(_ sender: Any) {
         let dropDown = DropDown()
         
@@ -84,14 +88,17 @@ class UploadViewController: UIViewController {
         present(alert, animated: true)
     }
     
-    // 로컬에 저장한 이미지의 파일 url로 DB에 저장
     @IBAction func saveImage(_ sender: Any) {
+        // 로컬에 이미지 저장하기
+        guard let image = imageView.image else { return }
+        let rotatedImage = rotateImage(image: image)
+        let data = rotatedImage?.pngData() // 회전된 데이터
+        try? data?.write(to: getFileName()) // try-catch문 : 에러 발생시 nil 반환 (예외 처리 안함)
+        
+        // 로컬에 저장한 이미지의 파일 url를 DB에 저장
         guard let image_filename = self.image_filename else { return }
         guard let image_desc = self.descTf.text else { return }
         guard let category_name = self.category_name else { return }
-        
-//        guard let category_name = self.category_name else { return }
-//        guard let category = category_name.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else { return }
         
         let strURL = "http://localhost:8000/ott/clothes/"
         let params:Parameters = ["image_filename":image_filename, "image_desc":image_desc, "category_name":category_name]
@@ -101,9 +108,9 @@ class UploadViewController: UIViewController {
             let result = json["success"].boolValue
             
             if result {
-                self.showResult(title: "사용자 등록", message: "사용자 등록 성공")
+                self.showResult(title: "옷 등록", message: "옷 등록 성공")
             } else {
-                self.showResult(title: "사용자 등록", message: "사용자 등록 실패")
+                self.showResult(title: "옷 등록", message: "옷 등록 실패")
             }
         }
         
@@ -131,11 +138,6 @@ extension UploadViewController:UINavigationControllerDelegate, UIImagePickerCont
         imageView?.image = image
         
         dismiss(animated: true) // present의 반대
-        
-        // 데이터 로컬에 저장하기
-        let rotatedImage = rotateImage(image: image)
-        let data = rotatedImage?.pngData() // 회전된 데이터
-        try? data?.write(to: getFileName()) // try-catch문 : 에러 발생시 nil 반환 (예외 처리 안함)
     }
     
     // 폴더 경로

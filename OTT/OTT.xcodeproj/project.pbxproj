@@ -19,6 +19,7 @@
 		E5A4444627279844006C28D8 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A4444527279844006C28D8 /* UploadViewController.swift */; };
 		E5A444882727D5FC006C28D8 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A444872727D5FC006C28D8 /* CategoryViewController.swift */; };
 		E5A4448A2727F2B3006C28D8 /* ClothesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A444892727F2B3006C28D8 /* ClothesViewController.swift */; };
+		E5A444AE27299605006C28D8 /* ClothesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A444AD27299605006C28D8 /* ClothesCell.swift */; };
 		F145919D272936E200350818 /* Alegreya-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F145919C272936E200350818 /* Alegreya-Regular.ttf */; };
 		F145919F272936F400350818 /* Alegreya-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F145919E272936F400350818 /* Alegreya-Bold.ttf */; };
 		F14591A12729377800350818 /* NotoSerifKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F14591A02729377800350818 /* NotoSerifKR-Bold.otf */; };
@@ -45,6 +46,7 @@
 		E5A4444527279844006C28D8 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		E5A444872727D5FC006C28D8 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		E5A444892727F2B3006C28D8 /* ClothesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesViewController.swift; sourceTree = "<group>"; };
+		E5A444AD27299605006C28D8 /* ClothesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesCell.swift; sourceTree = "<group>"; };
 		F145919C272936E200350818 /* Alegreya-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alegreya-Regular.ttf"; sourceTree = "<group>"; };
 		F145919E272936F400350818 /* Alegreya-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alegreya-Bold.ttf"; sourceTree = "<group>"; };
 		F14591A02729377800350818 /* NotoSerifKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSerifKR-Bold.otf"; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				E5A444872727D5FC006C28D8 /* CategoryViewController.swift */,
 				E5A444892727F2B3006C28D8 /* ClothesViewController.swift */,
 				F1A271A927281F970099C74A /* LaunchScreen.storyboard */,
+				E5A444AD27299605006C28D8 /* ClothesCell.swift */,
 			);
 			path = OTT;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 			files = (
 				E5A444882727D5FC006C28D8 /* CategoryViewController.swift in Sources */,
 				E5A444122726605A006C28D8 /* MainViewController.swift in Sources */,
+				E5A444AE27299605006C28D8 /* ClothesCell.swift in Sources */,
 				E5A444442726F026006C28D8 /* DateHeader.swift in Sources */,
 				E5A443FA27253C84006C28D8 /* AppDelegate.swift in Sources */,
 				E5A4448A2727F2B3006C28D8 /* ClothesViewController.swift in Sources */,

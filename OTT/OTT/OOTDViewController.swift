@@ -11,10 +11,13 @@ class OOTDViewController: UIViewController {
     
     var date:String? // 캘린더에서 받아온 날짜 데이터
 
+    @IBOutlet weak var dateLbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(date)
+        guard let date = self.date else { return }
+        dateLbl?.text = date
     }
 
 }

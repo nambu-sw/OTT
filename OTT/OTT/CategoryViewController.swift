@@ -13,7 +13,7 @@ class CategoryViewController: UIViewController, UITableViewDataSource, UITableVi
 
     @IBOutlet weak var tableView: UITableView!
     
-    var categorys:[[String:Any]]?
+    var categories:[[String:Any]]?
     var categoryCnt:Int?
     
     override func viewDidLoad() {
@@ -30,13 +30,16 @@ class CategoryViewController: UIViewController, UITableViewDataSource, UITableVi
             let json = JSON(value)
             // let result = json["success"].boolValue
             self.categoryCnt = json["count"].intValue
-            self.categorys = json["data"].arrayObject as? [[String:Any]]
-            print(self.categorys)
+            self.categories = json["data"].arrayObject as? [[String:Any]]
             
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
         }
+    }
+    
+    @IBAction func actBack(_ sender: Any) {
+        self.dismiss(animated: true)
     }
     
     func callAPI(strURL:String, method:HTTPMethod, parameters:Parameters?=nil, headers:HTTPHeaders?=nil, handler:@escaping (Any)->()) { // 다른 곳에서 실행될 수도 있으므로
@@ -65,11 +68,10 @@ class CategoryViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell", for: indexPath)
 
-        guard let categorys = self.categorys else { return cell }
+        guard let categories = self.categories else { return cell }
         
-        let category = categorys[indexPath.row]
+        let category = categories[indexPath.row]
         let name = category["category_name"] as? String
-        print(name)
         
         let lbl = cell.viewWithTag(1) as? UILabel
         lbl?.text = name
@@ -109,17 +111,17 @@ class CategoryViewController: UIViewController, UITableViewDataSource, UITableVi
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the item to be re-orderable.
         return true
-    }
+    }/Users/mijisuh/OTT/OTT/OTT/CategoryViewController.swift
     */
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if let destVC = segue.destination as? ClothesViewController,
+           let selectdeIndex = self.tableView.indexPathForSelectedRow?.row {
+            guard let categories = self.categories else { return }
+            let category = categories[selectdeIndex]
+            let selectedCategory = category["category_name"] as? String
+            destVC.category = selectedCategory
+        }
     }
-    */
 
 }

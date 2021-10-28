@@ -16,7 +16,7 @@ class MainViewController: UIViewController {
     var calendarDataSource: [String:String] = [:]
     var formatter: DateFormatter {
         let formatter = DateFormatter()
-        formatter.dateFormat = "dd-MMM-yyyy"
+        formatter.dateFormat = "yyyy.MM.dd.eee"
         return formatter
     }
 
