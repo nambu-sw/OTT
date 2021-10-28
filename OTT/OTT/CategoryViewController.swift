@@ -10,11 +10,11 @@ import Alamofire
 import SwiftyJSON
 
 class CategoryViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
-    @IBOutlet weak var tableView: UITableView!
     
     var categories:[[String:Any]]?
     var categoryCnt:Int?
+
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
