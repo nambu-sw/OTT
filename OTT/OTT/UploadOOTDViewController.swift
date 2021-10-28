@@ -38,6 +38,33 @@ class UploadOOTDViewController: UIViewController, UICollectionViewDataSource, UI
         self.dismiss(animated: true)
     }
     
+    @IBAction func uploadOOTD(_ sender: Any) {
+        // 코디 이미지 로컬 저장
+        guard let image = ootdView.transfromToImage() else { return }
+        
+        let rotatedImage = rotateImage(image: image)
+        let data = rotatedImage?.pngData() // 회전된 데이터
+        try? data?.write(to: getFileName()) // try-catch문 : 에러 발생시 nil 반환 (예외 처리 안함)
+        
+        // 로컬에 저장된 이미지 DB에 저장
+        guard let date = self.date,
+              let image_filename = self.image_filename else { return }
+        
+        let strURL = "http://localhost:8000/ott/ootd/"
+        let params:Parameters = ["date":date, "image_filename":image_filename, "image_desc":"-"]
+        
+        callAPI(strURL:strURL, method:.post, parameters: params) { value in
+            let json = JSON(value)
+            let result = json["success"].boolValue
+            
+            if result {
+                self.showResult(title: "코디 등록", message: "코디 등록 성공")
+            } else {
+                self.showResult(title: "코디 등록", message: "코디 등록 실패")
+            }
+        }
+    }
+    
     @IBAction func dropdown(_ sender: Any) {
         let dropDown = DropDown()
         
@@ -131,15 +158,13 @@ class UploadOOTDViewController: UIViewController, UICollectionViewDataSource, UI
               let name = clothes[indexPath.row]["image_filename"] as? String else { return }
         
         var imageView:UIImageView!
-        imageView = UIImageView(frame: CGRect(x:0, y:0, width:100, height:150))
+        imageView = UIImageView(frame: CGRect(x:0, y:0, width:100, height:100))
         
         imageView.image = getSavedImage(named: name)
         imageView.layer.position = CGPoint(x:ootdView.bounds.width/2, y:ootdView.bounds.height/2)
         
-        print(ootdView.bounds.width/2)
         ootdView.addSubview(imageView)
         
-        print("OK")
         imageView.isUserInteractionEnabled = true
         setupInputBinding(myView:imageView)
     }
@@ -195,9 +220,9 @@ extension UploadOOTDViewController:UINavigationControllerDelegate, UIImagePicker
         
         // 파일 이름 중복 처리 -> 날짜로 하거나 process info
         let uniquename = ProcessInfo.processInfo.globallyUniqueString
-        let filename = getDocuments().appendingPathComponent("image_\(uniquename).png")
+        let filename = getDocuments().appendingPathComponent("ootd_\(uniquename).png")
         print(filename)
-        image_filename = "image_\(uniquename).png"
+        image_filename = "ootd_\(uniquename).png"
         return filename
     }
     
