@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "설명추가문.png",
+      "filename" : "MinusButton.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "설명추가문@2x.png",
+      "filename" : "MinusButton@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "설명추가문@3x.png",
+      "filename" : "MinusButton@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
