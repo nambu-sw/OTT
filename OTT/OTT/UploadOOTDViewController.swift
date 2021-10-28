@@ -15,6 +15,7 @@ import RxCocoa
 class UploadOOTDViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     var date:String? // 캘린더에서 받아온 날짜 데이터
+    var isOOTDExisting:Bool?
     var category:String?
     var clothes:[[String:Any]]?
     var image_filename:String?
@@ -36,6 +37,10 @@ class UploadOOTDViewController: UIViewController, UICollectionViewDataSource, UI
     
     @IBAction func actBack(_ sender: Any) {
         self.dismiss(animated: true)
+    }
+    
+    @IBAction func cleanOOTD(_ sender: Any) {
+        for view in self.ootdView.subviews { view.removeFromSuperview() }
     }
     
     @IBAction func uploadOOTD(_ sender: Any) {
