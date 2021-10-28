@@ -235,7 +235,7 @@
                                     <segue destination="C3q-Dc-bNx" kind="presentation" modalPresentationStyle="fullScreen" id="6JK-Ci-khP"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BigLogo-1" translatesAutoresizingMaskIntoConstraints="NO" id="nY0-fQ-DWc">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="OTT-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="nY0-fQ-DWc">
                                 <rect key="frame" x="306" y="76" width="76" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -330,7 +330,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BigLogo-1" translatesAutoresizingMaskIntoConstraints="NO" id="QID-XW-yXv">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OTT-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="QID-XW-yXv">
                                                 <rect key="frame" x="297" y="0.0" width="80" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="80" id="WqI-8W-YuC"/>
@@ -359,19 +359,6 @@
                                     <action selector="actBack:" destination="C3q-Dc-bNx" eventType="touchUpInside" id="KT1-Iv-tR6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3u-pw-wzr">
-                                <rect key="frame" x="65" y="719" width="287" height="118"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="UPLOAD CLOTHES">
-                                    <backgroundConfiguration key="background" cornerRadius="10">
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" name=".SFUI-Regular" family=".AppleSystemUIFont" pointSize="35"/>
-                                    <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="N2h-S7-Za5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -390,7 +377,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="33F-IT-mKD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="102.89855072463769" y="750"/>
+            <point key="canvasLocation" x="103" y="868"/>
         </scene>
         <!--Clothes View Controller-->
         <scene sceneID="gtG-rH-6wd">
@@ -415,7 +402,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BigLogo-1" highlightedImage="BigLogo" translatesAutoresizingMaskIntoConstraints="NO" id="5Sl-K2-1Ve">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OTT-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="5Sl-K2-1Ve">
                                                 <rect key="frame" x="297" y="0.0" width="80" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="80" id="NeF-MX-4Va"/>
@@ -436,6 +423,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="UploadClothesButton" title=""/>
+                                <connections>
+                                    <segue destination="JSK-sG-Mpk" kind="presentation" id="CNy-Lh-p10"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcs-u1-Efm">
                                 <rect key="frame" x="27" y="44" width="46" height="41"/>
@@ -525,14 +515,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AfS-pB-i5Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="960.86956521739137" y="750"/>
+            <point key="canvasLocation" x="961" y="868"/>
         </scene>
         <!--Upload View Controller-->
         <scene sceneID="UtR-TH-nSm">
             <objects>
                 <viewController id="JSK-sG-Mpk" customClass="UploadViewController" customModule="OTT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ugj-mH-JMY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ImageViewLine" translatesAutoresizingMaskIntoConstraints="NO" id="JdT-oc-uFs">
@@ -635,6 +625,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hanger" translatesAutoresizingMaskIntoConstraints="NO" id="k75-eO-8K2">
+                                <rect key="frame" x="145" y="43" width="124" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HPn-oo-9nJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -673,23 +667,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ImageLine" translatesAutoresizingMaskIntoConstraints="NO" id="PQf-Gn-wNc">
-                                <rect key="frame" x="32" y="205" width="334" height="329"/>
+                                <rect key="frame" x="46" y="205" width="334" height="329"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LineImage" translatesAutoresizingMaskIntoConstraints="NO" id="xkd-GV-7t9">
                                 <rect key="frame" x="32" y="74" width="362" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BigLogo-1" translatesAutoresizingMaskIntoConstraints="NO" id="BpZ-Qb-Cc4">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="OTT-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="BpZ-Qb-Cc4">
                                 <rect key="frame" x="274" y="86" width="107" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" background="Rectangle 15" translatesAutoresizingMaskIntoConstraints="NO" id="Nzd-3Z-tGU">
-                                <rect key="frame" x="40" y="542" width="321" height="160"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HhP-Qo-aVY">
                                 <rect key="frame" x="40" y="44" width="38" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -700,7 +688,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPH-AZ-1vC">
-                                <rect key="frame" x="41" y="710" width="320" height="104"/>
+                                <rect key="frame" x="47" y="683" width="320" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Change">
@@ -724,7 +712,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jrL-Ih-MWJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="444.92753623188412" y="-741.29464285714278"/>
+            <point key="canvasLocation" x="856.52173913043487" y="-723.21428571428567"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="orE-dB-LTS">
@@ -738,7 +726,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BigLogo-1" translatesAutoresizingMaskIntoConstraints="NO" id="bRs-Xw-3Ug">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="OTT-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="bRs-Xw-3Ug">
                                 <rect key="frame" x="70" y="263" width="274" height="239"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -812,7 +800,7 @@
                                     <backgroundConfiguration key="background" cornerRadius="10" strokeOutset="11">
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" name=".SFUI-Regular" family=".AppleSystemUIFont" pointSize="30"/>
+                                    <fontDescription key="titleFontDescription" name="NotoSerifKR-Regular" family="Noto Serif KR" pointSize="30"/>
                                     <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -928,12 +916,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="amV-JC-ZMz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-707.24637681159425" y="-673.66071428571422"/>
+            <point key="canvasLocation" x="57" y="-707"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="CNy-Lh-p10"/>
+    </inferredMetricsTieBreakers>
     <resources>
-        <image name="BigLogo" width="139" height="216"/>
-        <image name="BigLogo-1" width="287" height="708"/>
         <image name="ImageLine" width="100" height="95"/>
         <image name="ImageViewLine" width="338" height="321"/>
         <image name="LOGO_CA 3" width="375" height="172"/>
@@ -942,11 +931,13 @@
         <image name="LineImage-1" width="362" height="18"/>
         <image name="MONTHLY lOOK Calendar" width="218" height="92"/>
         <image name="MinusButton" width="62" height="75"/>
+        <image name="OTT-Logo" width="447" height="701"/>
         <image name="PlusButton" width="62" height="75"/>
         <image name="Rectangle 15" width="326" height="132"/>
         <image name="UploadClothesButton" width="315" height="110"/>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="chevron.forward" catalog="system" width="96" height="128"/>
+        <image name="hanger" width="512" height="512"/>
         <image name="tshirt" catalog="system" width="128" height="99"/>
         <image name="로딩 옷장 image" width="294" height="667"/>
         <systemColor name="labelColor">
