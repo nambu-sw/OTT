@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -85,7 +85,6 @@
                                         <connections>
                                             <outlet property="dateLabel" destination="4u2-H0-BMG" id="5ID-fa-G72"/>
                                             <outlet property="selectedView" destination="bzk-G9-d6n" id="W3M-bP-KhU"/>
-                                            <segue destination="tFI-nA-7sU" kind="presentation" modalPresentationStyle="fullScreen" id="sEH-ED-8DR"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -708,6 +707,7 @@
                     </view>
                     <connections>
                         <outlet property="dateLbl" destination="4DG-XJ-42m" id="sve-K7-5jo"/>
+                        <outlet property="imageView" destination="PQf-Gn-wNc" id="eP4-7g-auD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jrL-Ih-MWJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -781,7 +781,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3v-X6-8EW">
-                                <rect key="frame" x="100" y="488" width="215" height="57"/>
+                                <rect key="frame" x="25" y="541" width="215" height="34"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <inset key="contentEdgeInsets" minX="100" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -808,7 +808,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="azU-cr-zGK">
-                                <rect key="frame" x="0.0" y="203" width="414" height="277"/>
+                                <rect key="frame" x="0.0" y="203" width="414" height="330"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B1Z-kS-9lF">
@@ -867,41 +867,52 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="TCV-t6-yoM"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="00F-3K-IHe"/>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbp-Yc-g04">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbp-Yc-g04">
                                 <rect key="frame" x="342" y="123" width="52" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="MinusButton"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7X-WG-dTn">
-                                <rect key="frame" x="263" y="112" width="71" height="89"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7X-WG-dTn">
+                                <rect key="frame" x="263" y="114" width="71" height="89"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="71" id="RbI-Wr-NFt"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="PlusButton"/>
+                                <connections>
+                                    <action selector="uploadOOTD:" destination="vfC-lV-1SE" eventType="touchUpInside" id="Iqb-qo-LiC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HbL-Lp-Tgt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Tad-ys-dYt" firstAttribute="top" secondItem="HbL-Lp-Tgt" secondAttribute="top" constant="30" id="1Db-ph-yJF"/>
-                            <constraint firstItem="B1Z-kS-9lF" firstAttribute="centerX" secondItem="i3v-X6-8EW" secondAttribute="centerX" id="4n1-Uc-0Ze"/>
+                            <constraint firstItem="B1Z-kS-9lF" firstAttribute="centerX" secondItem="i3v-X6-8EW" secondAttribute="centerX" constant="74.5" id="4n1-Uc-0Ze"/>
                             <constraint firstItem="yxa-MS-znr" firstAttribute="leading" secondItem="HbL-Lp-Tgt" secondAttribute="leading" constant="40" id="59k-EP-d6s"/>
                             <constraint firstItem="UST-NA-oFD" firstAttribute="top" secondItem="HbL-Lp-Tgt" secondAttribute="top" id="8ho-jO-ci4"/>
                             <constraint firstItem="azU-cr-zGK" firstAttribute="leading" secondItem="B1Z-kS-9lF" secondAttribute="leading" id="AbX-M5-6pk"/>
                             <constraint firstItem="azU-cr-zGK" firstAttribute="trailing" secondItem="B1Z-kS-9lF" secondAttribute="trailing" id="Akz-td-pRH"/>
+                            <constraint firstItem="azU-cr-zGK" firstAttribute="top" secondItem="vbp-Yc-g04" secondAttribute="bottom" constant="14" id="CBo-Cx-cgp"/>
                             <constraint firstItem="HbL-Lp-Tgt" firstAttribute="trailing" secondItem="B1Z-kS-9lF" secondAttribute="trailing" id="CC6-xM-SJL"/>
                             <constraint firstItem="yxa-MS-znr" firstAttribute="leading" secondItem="nth-wZ-neT" secondAttribute="leading" constant="3" id="Kr0-6o-yWJ"/>
                             <constraint firstItem="nth-wZ-neT" firstAttribute="top" secondItem="UST-NA-oFD" secondAttribute="bottom" constant="23" id="L8A-ot-9zT"/>
                             <constraint firstItem="i3v-X6-8EW" firstAttribute="top" secondItem="azU-cr-zGK" secondAttribute="bottom" constant="8" id="VCF-Uk-Skb"/>
-                            <constraint firstItem="B1Z-kS-9lF" firstAttribute="top" secondItem="i3v-X6-8EW" secondAttribute="bottom" constant="47" id="Wyz-Xu-BVb"/>
+                            <constraint firstItem="B1Z-kS-9lF" firstAttribute="top" secondItem="i3v-X6-8EW" secondAttribute="bottom" constant="17" id="Wyz-Xu-BVb"/>
+                            <constraint firstItem="q7X-WG-dTn" firstAttribute="leading" secondItem="yxa-MS-znr" secondAttribute="trailing" id="eix-aX-5nw"/>
+                            <constraint firstItem="q7X-WG-dTn" firstAttribute="leading" secondItem="nth-wZ-neT" secondAttribute="trailing" constant="8" symbolic="YES" id="f70-np-JMN"/>
                             <constraint firstItem="B1Z-kS-9lF" firstAttribute="top" secondItem="IDa-jq-8Cz" secondAttribute="top" constant="592" id="f8p-Fq-4Ff"/>
                             <constraint firstItem="azU-cr-zGK" firstAttribute="top" secondItem="yxa-MS-znr" secondAttribute="bottom" constant="8" id="fR3-9H-zEz"/>
                             <constraint firstItem="B1Z-kS-9lF" firstAttribute="leading" secondItem="HbL-Lp-Tgt" secondAttribute="leading" id="hHv-9U-7LO"/>
                             <constraint firstItem="yxa-MS-znr" firstAttribute="top" secondItem="Tad-ys-dYt" secondAttribute="bottom" constant="66" id="hZW-xj-Aw7"/>
+                            <constraint firstItem="azU-cr-zGK" firstAttribute="top" secondItem="q7X-WG-dTn" secondAttribute="bottom" id="j3H-zA-FH9"/>
                             <constraint firstItem="Tad-ys-dYt" firstAttribute="trailing" secondItem="IDa-jq-8Cz" secondAttribute="trailingMargin" id="kJc-Eh-ao5"/>
-                            <constraint firstAttribute="bottom" secondItem="azU-cr-zGK" secondAttribute="bottom" constant="416" id="oN2-tJ-aTY"/>
+                            <constraint firstItem="vbp-Yc-g04" firstAttribute="trailing" secondItem="Tad-ys-dYt" secondAttribute="trailing" id="kig-ni-bGX"/>
+                            <constraint firstItem="vbp-Yc-g04" firstAttribute="leading" secondItem="q7X-WG-dTn" secondAttribute="trailing" constant="8" symbolic="YES" id="ljy-Zd-OF1"/>
+                            <constraint firstAttribute="bottom" secondItem="azU-cr-zGK" secondAttribute="bottom" constant="363" id="oN2-tJ-aTY"/>
                             <constraint firstItem="HbL-Lp-Tgt" firstAttribute="bottom" secondItem="B1Z-kS-9lF" secondAttribute="bottom" id="rLF-3X-Vn6"/>
                             <constraint firstItem="4hP-Yw-DQ1" firstAttribute="leading" secondItem="HbL-Lp-Tgt" secondAttribute="leading" id="s3K-ZB-jaB"/>
+                            <constraint firstItem="vbp-Yc-g04" firstAttribute="top" secondItem="Tad-ys-dYt" secondAttribute="bottom" constant="31" id="tkS-kE-TjQ"/>
                             <constraint firstItem="B1Z-kS-9lF" firstAttribute="top" secondItem="HbL-Lp-Tgt" secondAttribute="top" constant="548" id="tyJ-NF-b1G"/>
                             <constraint firstItem="yxa-MS-znr" firstAttribute="leading" secondItem="UST-NA-oFD" secondAttribute="leading" constant="3" id="wEf-Fl-TBi"/>
                             <constraint firstItem="HbL-Lp-Tgt" firstAttribute="trailing" secondItem="UST-NA-oFD" secondAttribute="trailing" constant="336" id="xgr-Jp-6sc"/>

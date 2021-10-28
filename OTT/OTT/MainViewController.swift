@@ -136,8 +136,6 @@ extension MainViewController: JTACMonthViewDelegate {
         // 화면 이동
         if let ootdVC = self.storyboard?.instantiateViewController(withIdentifier: "ootdvc") as? OOTDViewController {
             
-            ootdVC.modalTransitionStyle = .coverVertical
-            
             // 데이터 전달
             ootdVC.date = formatter.string(from: date)
             

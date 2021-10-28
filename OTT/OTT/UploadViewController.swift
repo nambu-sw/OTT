@@ -113,7 +113,6 @@ class UploadViewController: UIViewController {
                 self.showResult(title: "옷 등록", message: "옷 등록 실패")
             }
         }
-        
     }
     
     func callAPI(strURL:String, method:HTTPMethod, parameters:Parameters?=nil, headers:HTTPHeaders?=nil, handler:@escaping (Any)->()) { // 다른 곳에서 실행될 수도 있으므로
@@ -156,9 +155,9 @@ extension UploadViewController:UINavigationControllerDelegate, UIImagePickerCont
         
         // 파일 이름 중복 처리 -> 날짜로 하거나 process info
         let uniquename = ProcessInfo.processInfo.globallyUniqueString
-        let filename = getDocuments().appendingPathComponent("image_\(uniquename).png")
+        let filename = getDocuments().appendingPathComponent("clothes_\(uniquename).png")
         print(filename)
-        image_filename = "image_\(uniquename).png"
+        image_filename = "clothes_\(uniquename).png"
         return filename
     }
     
