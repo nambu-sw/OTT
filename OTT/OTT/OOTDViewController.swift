@@ -49,6 +49,7 @@ class OOTDViewController: UIViewController {
     }
     
     @IBAction func actBack(_ sender: Any) {
+        self.dismiss(animated: true)
         self.mainViewController?.viewWillAppear(true)
     }
     
