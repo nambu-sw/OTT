@@ -50,61 +50,96 @@ class UploadOOTDViewController: UIViewController, UICollectionViewDataSource, UI
         let rotatedImage = rotateImage(image: image)
         let data = rotatedImage?.pngData() // 회전된 데이터
         try? data?.write(to: getFileName()) // try-catch문 : 에러 발생시 nil 반환 (예외 처리 안함)
-        
+
         // 로컬에 저장된 이미지 DB에 저장
         guard let date = self.date,
-              let image_filename = self.image_filename else { return }
+              let image_filename = self.image_filename,
+              let isOOTDExisting = self.isOOTDExisting else { return }
         
-        let strURL = "http://localhost:8000/ott/ootd/"
-        let params:Parameters = ["date":date, "image_filename":image_filename, "image_desc":"-"]
-        
-        callAPI(strURL:strURL, method:.post, parameters: params) { value in
-            let json = JSON(value)
-            let result = json["success"].boolValue
+        if isOOTDExisting == false {
+            let strURL = "http://localhost:8000/ott/ootd/"
+            let params:Parameters = ["date":date, "image_filename":image_filename, "image_desc":"-"]
             
-            if result {
-                self.showResult(title: "코디 등록", message: "코디 등록 성공")
-            } else {
-                self.showResult(title: "코디 등록", message: "코디 등록 실패")
+            callAPI(strURL:strURL, method:.post, parameters: params) { value in
+                let json = JSON(value)
+                let result = json["success"].boolValue
+                
+                if result {
+                    self.showResult(title: "코디 등록", message: "코디 등록 성공")
+                } else {
+                    self.showResult(title: "코디 등록", message: "코디 등록 실패")
+                }
+            }
+        } else {
+            guard let date = self.date,
+                  let date = date.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else { return }
+            
+            let strURL = "http://localhost:8000/ott/ootd/\(date)"
+            let params:Parameters = ["date":date, "image_filename":image_filename, "image_desc":"-"]
+            
+            callAPI(strURL:strURL, method:.put, parameters: params) { value in
+                let json = JSON(value)
+                let result = json["success"].boolValue
+                
+                if result {
+                    self.showResult(title: "코디 수정", message: "코디 수정 성공")
+                } else {
+                    self.showResult(title: "코디 수정", message: "코디 수정 실패")
+                }
             }
         }
     }
     
     @IBAction func dropdown(_ sender: Any) {
         let dropDown = DropDown()
+        var dataSource:[String] = []
         
-        dropDown.dataSource = ["모자", "아우터", "상의", "하의", "신발", "가방"]
-        dropDown.anchorView = categoryBtn
-        dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
-        dropDown.width = 150
-        dropDown.textColor = UIColor.black
-        dropDown.selectedTextColor = UIColor.blue
-        dropDown.textFont = UIFont.systemFont(ofSize: 20)
-        dropDown.backgroundColor = UIColor.white
-        dropDown.selectionBackgroundColor = UIColor.white
-        dropDown.cellHeight = 50
-        dropDown.cornerRadius = 15
-        dropDown.show()
+        let strURL = "http://localhost:8000/ott/category/"
         
-        dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
-            print("선택한 아이템 : \(item)")
-            print("인덱스 : \(index)")
-            dropDown.clearSelection()
-            category = item
-            categoryBtn.titleLabel?.text = "\(item)"
+        callAPI(strURL:strURL, method:.get) { value in
+            let json = JSON(value)
+            // let result = json["success"].boolValue
+            let categories = json["data"].arrayObject as? [[String:String]]
             
-            // 옷 가져오기
-            guard let category = self.category,
-                  let category_name = category.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else { return }
+            for category in categories! {
+                let name = category["category_name"]
+                dataSource.append(name!)
+            }
             
-            let strURL = "http://localhost:8000/ott/clothes/\(category_name)"
-            callAPI(strURL:strURL, method:.get) { value in
-                let json = JSON(value)
-                // let result = json["success"].boolValue
-                self.clothes = json["data"].arrayObject as? [[String:Any]]
+            dropDown.dataSource = dataSource
+            dropDown.anchorView = self.categoryBtn
+            dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
+            dropDown.width = 150
+            dropDown.textColor = UIColor.gray
+            dropDown.selectedTextColor = UIColor.black
+            // dropDown.textFont = UIFont.systemFont(ofSize: 20)
+            if let font = UIFont(name: "NotoSerifKR-Regular", size: 15) {
+                dropDown.textFont = font
+            }
+            // dropDown.backgroundColor = UIColor.white
+            // dropDown.selectionBackgroundColor = UIColor.white
+            dropDown.cellHeight = 40
+            dropDown.cornerRadius = 15
+            dropDown.show()
+            
+            dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
+                dropDown.clearSelection()
+                category = item
+                categoryBtn.titleLabel?.text = "\(item)"
                 
-                DispatchQueue.main.async {
-                    self.collectionView.reloadData()
+                // 옷 가져오기
+                guard let category = self.category,
+                      let category_name = category.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else { return }
+                
+                let strURL = "http://localhost:8000/ott/clothes/\(category_name)"
+                callAPI(strURL:strURL, method:.get) { value in
+                    let json = JSON(value)
+                    // let result = json["success"].boolValue
+                    self.clothes = json["data"].arrayObject as? [[String:Any]]
+                    
+                    DispatchQueue.main.async {
+                        self.collectionView.reloadData()
+                    }
                 }
             }
         }

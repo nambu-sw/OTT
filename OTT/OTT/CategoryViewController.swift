@@ -15,6 +15,7 @@ class CategoryViewController: UIViewController, UITableViewDataSource, UITableVi
     var categoryCnt:Int?
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var categoryTf: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +43,25 @@ class CategoryViewController: UIViewController, UITableViewDataSource, UITableVi
         self.dismiss(animated: true)
     }
     
+    @IBAction func addCategory(_ sender: Any) {
+        guard let category_name = categoryTf.text else { return }
+        
+        let strURL = "http://localhost:8000/ott/category/"
+        let params:Parameters = ["category_name":category_name]
+        
+        callAPI(strURL:strURL, method:.post, parameters: params) { value in
+            let json = JSON(value)
+            // let result = json["success"].boolValue
+            self.categoryCnt = json["count"].intValue
+            self.categories = json["data"].arrayObject as? [[String:Any]]
+            
+            DispatchQueue.main.async {
+                self.viewWillAppear(true)
+                self.categoryTf.text = ""
+            }
+        }
+    }
+    
     func callAPI(strURL:String, method:HTTPMethod, parameters:Parameters?=nil, headers:HTTPHeaders?=nil, handler:@escaping (Any)->()) { // 다른 곳에서 실행될 수도 있으므로
         let alamo = AF.request(strURL, method:method, parameters: parameters)
         alamo.responseJSON { response in
@@ -60,6 +80,7 @@ class CategoryViewController: UIViewController, UITableViewDataSource, UITableVi
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let categoryCnt = self.categoryCnt {
+            print(categoryCnt)
             return categoryCnt
         }
         return 0
@@ -79,40 +100,37 @@ class CategoryViewController: UIViewController, UITableViewDataSource, UITableVi
         return cell
     }
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
-    */
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
+            guard let categories = self.categories else { return }
+            
+            let category = categories[indexPath.row]
+            guard let name = category["category_name"] as? String,
+                  let category_name = name.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else { return }
+            
+            let strURL = "http://localhost:8000/ott/category/\(category_name)"
+            
+            callAPI(strURL:strURL, method:.delete) { value in
+                let json = JSON(value)
+                // let result = json["success"].boolValue
+                self.categoryCnt = json["count"].intValue
+                
+                self.tableView.beginUpdates()
+                self.tableView.deleteRows(at: [indexPath], with: .fade)
+                self.tableView.endUpdates()
+            }
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }
     }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .delete
     }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }/Users/mijisuh/OTT/OTT/OTT/CategoryViewController.swift
-    */
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destVC = segue.destination as? ClothesViewController,
