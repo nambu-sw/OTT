@@ -991,8 +991,8 @@
         <image name="chevron.forward" catalog="system" width="96" height="128"/>
         <image name="hanger" width="512" height="512"/>
         <image name="trash" catalog="system" width="121" height="128"/>
-        <image name="tshirt" catalog="system" width="128" height="99"/>
         <image name="tshirt" width="512" height="512"/>
+        <image name="tshirt" catalog="system" width="128" height="99"/>
         <image name="로딩 옷장 image" width="294" height="667"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
