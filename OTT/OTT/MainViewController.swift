@@ -7,13 +7,16 @@
 
 import UIKit
 import JTAppleCalendar
+import Alamofire
+import SwiftyJSON
 
 class MainViewController: UIViewController {
     
     @IBOutlet var calendarView: JTACMonthView!
     
     let testCalendar = Calendar(identifier: .gregorian)
-    var calendarDataSource: [String:String] = [:]
+    var ootd:[[String:Any]]?
+    var calendarDataSource:[String:String] = [:]
     var formatter: DateFormatter {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy.MM.dd.eee"
@@ -37,6 +40,39 @@ class MainViewController: UIViewController {
         
 //        let visibleDates = calendarView.visibleDates()
 //        print(visibleDates.monthDates)
+        populateDataSource()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let strURL = "http://localhost:8000/ott/ootd/"
+        
+        callAPI(strURL:strURL, method:.get) { value in
+            let json = JSON(value)
+            // let result = json["success"].boolValue
+            self.ootd = json["data"].arrayObject as? [[String:Any]]
+            guard let ootd = self.ootd else { return }
+            
+            for item in ootd {
+                guard let date = item["date"] as? String else { break }
+                self.calendarDataSource[date] = "onlyData"
+            }
+            
+            DispatchQueue.main.async {
+                self.calendarView.reloadData()
+            }
+        }
+    }
+    
+    func callAPI(strURL:String, method:HTTPMethod, parameters:Parameters?=nil, headers:HTTPHeaders?=nil, handler:@escaping (Any)->()) {
+        let alamo = AF.request(strURL, method:method, parameters: parameters)
+        alamo.responseJSON { response in
+            switch response.result {
+            case .success(let value):
+                handler(value)
+            case .failure(let error):
+                print(error.errorDescription)
+            }
+        }
     }
     
     func configureCell(view: JTACDayCell?, cellState: CellState) {
@@ -44,7 +80,7 @@ class MainViewController: UIViewController {
         cell.dateLabel.text = cellState.text
         handleCellTextColor(cell: cell, cellState: cellState)
         handleCellSelected(cell: cell, cellState: cellState)
-        // handleCellEvents(cell: cell, cellState: cellState)
+        handleCellEvents(cell: cell, cellState: cellState)
     }
     
     func handleCellTextColor(cell: DateCell, cellState: CellState) {
@@ -62,6 +98,29 @@ class MainViewController: UIViewController {
         } else {
             cell.selectedView.isHidden = true
         }
+    }
+    
+    func handleCellEvents(cell: DateCell, cellState: CellState) {
+        let dateString = formatter.string(from: cellState.date)
+        if calendarDataSource[dateString] == nil {
+            cell.dotView.isHidden = true
+        } else {
+            cell.dotView.isHidden = false
+        }
+    }
+    
+    // 서버에서 날짜 정보 받아와서 해당 이미지 띄워주기
+    func populateDataSource() {
+        // You can get the data from a server.
+        // Then convert that data into a form that can be used by the calendar.
+        calendarDataSource = [
+            "07-Jan-2021": "SomeData",
+            "15-Jan-2021": "SomeMoreData",
+            "15-Feb-2021": "MoreData",
+            "21-Feb-2021": "onlyData",
+        ]
+        // update the calendar
+        calendarView.reloadData()
     }
     
 }
@@ -112,8 +171,8 @@ extension MainViewController: JTACMonthViewDelegate {
         }
         
         if testCalendar.isDateInToday(date) {
-            cell.dateLabel.textColor = UIColor.blue
-            cell.dateLabel.font = UIFont.boldSystemFont(ofSize: 17.0)
+            cell.dateLabel.textColor = UIColor.black
+            cell.dateLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
             
         } else {
             cell.dateLabel.textColor = UIColor.black
@@ -138,7 +197,7 @@ extension MainViewController: JTACMonthViewDelegate {
             
             // 데이터 전달
             ootdVC.date = formatter.string(from: date)
-            
+            ootdVC.mainViewController = self
             present(ootdVC, animated: true)
         }
     }

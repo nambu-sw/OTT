@@ -12,6 +12,8 @@ import SwiftyJSON
 
 class UploadViewController: UIViewController {
     
+    var mainViewController:MainViewController?
+    
     let picker = UIImagePickerController()
     var category_name:String?
     var image_filename:String?

@@ -10,7 +10,7 @@ import Alamofire
 import SwiftyJSON
 
 class OOTDViewController: UIViewController {
-    
+    var mainViewController:MainViewController?
     var date:String? // 캘린더에서 받아온 날짜 데이터
     var isOOTDExisting = false
     var ootd:[String:String]?
@@ -46,6 +46,10 @@ class OOTDViewController: UIViewController {
             print(image_filename)
             self.imageView.image = self.getSavedImage(named: image_filename)
         }
+    }
+    
+    @IBAction func actBack(_ sender: Any) {
+        self.mainViewController?.viewWillAppear(true)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

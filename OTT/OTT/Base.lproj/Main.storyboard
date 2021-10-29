@@ -74,8 +74,23 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view contentMode="scaleToFill" restorationIdentifier="Dot View" translatesAutoresizingMaskIntoConstraints="NO" id="nHp-iy-did">
+                                                    <rect key="frame" x="41.5" y="60" width="7" height="7"/>
+                                                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="7" id="NXS-pg-91a"/>
+                                                        <constraint firstAttribute="width" constant="7" id="fEs-lr-Yag"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="nHp-iy-did" firstAttribute="centerX" secondItem="4u2-H0-BMG" secondAttribute="centerX" id="8Va-W6-FAc"/>
+                                                <constraint firstItem="nHp-iy-did" firstAttribute="top" secondItem="bzk-G9-d6n" secondAttribute="bottom" constant="-5" id="EG7-fT-Tjf"/>
                                                 <constraint firstItem="bzk-G9-d6n" firstAttribute="centerX" secondItem="DwM-sf-URx" secondAttribute="centerX" id="MSb-L0-Onm"/>
                                                 <constraint firstItem="4u2-H0-BMG" firstAttribute="centerX" secondItem="DwM-sf-URx" secondAttribute="centerX" id="XfU-Vf-Xjf"/>
                                                 <constraint firstItem="4u2-H0-BMG" firstAttribute="centerY" secondItem="DwM-sf-URx" secondAttribute="centerY" id="n46-KE-mha"/>
@@ -84,7 +99,8 @@
                                         </collectionViewCellContentView>
                                         <connections>
                                             <outlet property="dateLabel" destination="4u2-H0-BMG" id="5ID-fa-G72"/>
-                                            <outlet property="selectedView" destination="bzk-G9-d6n" id="W3M-bP-KhU"/>
+                                            <outlet property="dotView" destination="nHp-iy-did" id="A3e-dM-ehR"/>
+                                            <outlet property="selectedView" destination="bzk-G9-d6n" id="opX-aM-pNk"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -570,7 +586,7 @@
             <objects>
                 <viewController id="JSK-sG-Mpk" customClass="UploadViewController" customModule="OTT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ugj-mH-JMY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ImageViewLine" translatesAutoresizingMaskIntoConstraints="NO" id="JdT-oc-uFs">
@@ -649,7 +665,7 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="actBack:" destination="JSK-sG-Mpk" eventType="touchUpInside" id="Uga-7l-UHb"/>
+                                    <action selector="actBack:" destination="JSK-sG-Mpk" eventType="touchUpInside" id="4VO-qO-8Cc"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&lt;!&gt; 설명을 추가해 주세요." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5wh-Z6-lfp">
@@ -765,6 +781,16 @@
                                 <rect key="frame" x="32" y="679" width="42" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MsF-lN-vyN">
+                                <rect key="frame" x="46" y="36" width="28" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system"/>
+                                <connections>
+                                    <action selector="actBack:" destination="tFI-nA-7sU" eventType="touchUpInside" id="rgw-Zg-yfG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="K0X-gE-oOf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -998,7 +1024,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="CNy-Lh-p10"/>
+        <segue reference="WBB-ll-gq0"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="ImageLine" width="100" height="95"/>
@@ -1028,6 +1054,9 @@
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
