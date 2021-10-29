@@ -12,6 +12,7 @@ import SwiftyJSON
 class OOTDViewController: UIViewController {
     
     var date:String? // 캘린더에서 받아온 날짜 데이터
+    var isOOTDExisting = false
     var ootd:[String:String]?
     
     @IBOutlet weak var dateLbl: UILabel!
@@ -33,7 +34,10 @@ class OOTDViewController: UIViewController {
         callAPI(strURL:strURL, method:.get) { value in
             let json = JSON(value)
             print(json)
-            // let result = json["success"].boolValue
+            let result = json["success"].boolValue
+            if result == true {
+                self.isOOTDExisting = true
+            }
             self.ootd = json["data"].dictionaryObject as? [String:String]
             
             guard let ootd = self.ootd,
@@ -47,6 +51,7 @@ class OOTDViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destVC = segue.destination as? UploadOOTDViewController {
             destVC.date = date
+            destVC.isOOTDExisting = isOOTDExisting
         }
     }
     

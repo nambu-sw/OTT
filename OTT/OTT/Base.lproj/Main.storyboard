@@ -859,6 +859,9 @@
                                 <rect key="frame" x="342" y="123" width="52" height="66"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="MinusButton"/>
+                                <connections>
+                                    <action selector="cleanOOTD:" destination="vfC-lV-1SE" eventType="touchUpInside" id="fV6-E0-G5b"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7X-WG-dTn">
                                 <rect key="frame" x="263" y="114" width="71" height="89"/>
