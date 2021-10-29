@@ -37,26 +37,43 @@ class UploadViewController: UIViewController {
     
     @IBAction func dropdown(_ sender: Any) {
         let dropDown = DropDown()
+        var dataSource:[String] = []
         
-        dropDown.dataSource = ["모자", "아우터", "상의", "하의", "신발", "가방"]
-        dropDown.anchorView = categoryBtn
-        dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
-        dropDown.width = 150
-        dropDown.textColor = UIColor.black
-        dropDown.selectedTextColor = UIColor.blue
-        dropDown.textFont = UIFont.systemFont(ofSize: 20)
-        dropDown.backgroundColor = UIColor.white
-        dropDown.selectionBackgroundColor = UIColor.white
-        dropDown.cellHeight = 50
-        dropDown.cornerRadius = 15
-        dropDown.show()
+        let strURL = "http://localhost:8000/ott/category/"
         
-        dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
-            print("선택한 아이템 : \(item)")
-            print("인덱스 : \(index)")
-            dropDown.clearSelection()
-            category_name = item
-            categoryBtn.titleLabel?.text = "\(item)"
+        callAPI(strURL:strURL, method:.get) { value in
+            let json = JSON(value)
+            // let result = json["success"].boolValue
+            let categories = json["data"].arrayObject as? [[String:String]]
+            
+            for category in categories! {
+                let name = category["category_name"]
+                dataSource.append(name!)
+            }
+            
+            dropDown.dataSource = dataSource
+            dropDown.anchorView = self.categoryBtn
+            dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
+            dropDown.width = 150
+            dropDown.textColor = UIColor.gray
+            dropDown.selectedTextColor = UIColor.black
+            // dropDown.textFont = UIFont.systemFont(ofSize: 20)
+            if let font = UIFont(name: "NotoSerifKR-Regular", size: 15) {
+                dropDown.textFont = font
+            }
+            // dropDown.backgroundColor = UIColor.white
+            // dropDown.selectionBackgroundColor = UIColor.white
+            dropDown.cellHeight = 40
+            dropDown.cornerRadius = 15
+            dropDown.show()
+            
+            dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
+                print("선택한 아이템 : \(item)")
+                print("인덱스 : \(index)")
+                dropDown.clearSelection()
+                category_name = item
+                categoryBtn.titleLabel?.text = "\(item)"
+            }
         }
     }
     

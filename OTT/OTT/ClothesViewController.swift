@@ -15,9 +15,12 @@ class ClothesViewController: UIViewController, UICollectionViewDataSource, UICol
     var clothes:[[String:Any]]?
     
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var removeBtn: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationItem.rightBarButtonItem = editButtonItem
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -38,6 +41,34 @@ class ClothesViewController: UIViewController, UICollectionViewDataSource, UICol
 
     @IBAction func actBack(_ sender: Any) {
         self.dismiss(animated: true)
+    }
+    
+    @IBAction func actRemove(_ sender: Any) {
+        if let selectedCells = collectionView.indexPathsForSelectedItems {
+            // 1
+            let items = selectedCells.map { $0.item }.sorted().reversed()
+            // 2
+            for item in items {
+                guard let clothes = self.clothes else { return }
+                let clothe = clothes[item]
+                print(clothe)
+                let id = clothe["id"] as? Int
+                let strURL = "http://localhost:8000/ott/clothes/\(id!)"
+                
+                callAPI(strURL:strURL, method:.delete) { value in
+                    let json = JSON(value)
+                    // let result = json["success"].boolValue
+                }
+                // modelData.remove(at: item)
+            }
+            // 3
+            collectionView.deleteItems(at: selectedCells)
+            removeBtn.isEnabled = false
+            
+            DispatchQueue.main.async {
+                self.viewWillAppear(true)
+            }
+        }
     }
     
     func callAPI(strURL:String, method:HTTPMethod, parameters:Parameters?=nil, headers:HTTPHeaders?=nil, handler:@escaping (Any)->()) {
@@ -84,8 +115,34 @@ class ClothesViewController: UIViewController, UICollectionViewDataSource, UICol
               let name = clothes[indexPath.row]["image_filename"] as? String else { return cell }
         
         cell.imgView.image = getSavedImage(named: name)
+        cell.isInEditingMode = isEditing
         
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if !isEditing {
+            removeBtn.isEnabled = false
+        } else {
+            removeBtn.isEnabled = true
+        }
+    }
+
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        if let selectedItems = collectionView.indexPathsForSelectedItems, selectedItems.count == 0 {
+            removeBtn.isEnabled = false
+        }
+    }
+ 
+    override func setEditing(_ editing: Bool, animated: Bool) {
+        super.setEditing(editing, animated: animated)
+        
+        collectionView.allowsMultipleSelection = editing
+        let indexPaths = collectionView.indexPathsForVisibleItems
+        for indexPath in indexPaths {
+            let cell = collectionView.cellForItem(at: indexPath) as! ClothesCell
+            cell.isInEditingMode = editing
+        }
+    }
+
 }
