@@ -44,47 +44,54 @@ class UploadOOTDViewController: UIViewController, UICollectionViewDataSource, UI
     }
     
     @IBAction func uploadOOTD(_ sender: Any) {
-        // 코디 이미지 로컬 저장
-        guard let image = ootdView.transfromToImage() else { return }
+        let viewCnt = self.ootdView.subviews.count
+        print(viewCnt)
         
-        let rotatedImage = rotateImage(image: image)
-        let data = rotatedImage?.pngData() // 회전된 데이터
-        try? data?.write(to: getFileName()) // try-catch문 : 에러 발생시 nil 반환 (예외 처리 안함)
-
-        // 로컬에 저장된 이미지 DB에 저장
-        guard let date = self.date,
-              let image_filename = self.image_filename,
-              let isOOTDExisting = self.isOOTDExisting else { return }
-        
-        if isOOTDExisting == false {
-            let strURL = "http://localhost:8000/ott/ootd/"
-            let params:Parameters = ["date":date, "image_filename":image_filename, "image_desc":"-"]
-            
-            callAPI(strURL:strURL, method:.post, parameters: params) { value in
-                let json = JSON(value)
-                let result = json["success"].boolValue
-                
-                if result {
-                    self.showResult(title: "코디 등록", message: "코디 등록 성공")
-                } else {
-                    self.showResult(title: "코디 등록", message: "코디 등록 실패")
-                }
-            }
+        if viewCnt == 0 {
+            self.showResult(title: "코디 등록", message: "코디 등록 실패")
         } else {
+            // 코디 이미지 로컬 저장
+            guard let image = self.ootdView.transfromToImage() else { return }
+            
+            let rotatedImage = rotateImage(image: image)
+            let data = rotatedImage?.pngData() // 회전된 데이터
+            try? data?.write(to: getFileName()) // try-catch문 : 에러 발생시 nil 반환 (예외 처리 안함)
+            
+            // 로컬에 저장된 이미지 DB에 저장
             guard let date = self.date,
-                  let date = date.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else { return }
+                  let image_filename = self.image_filename,
+                  let isOOTDExisting = self.isOOTDExisting else { return }
             
-            let strURL = "http://localhost:8000/ott/ootd/\(date)"
-            let params:Parameters = ["date":date, "image_filename":image_filename, "image_desc":"-"]
-            
-            callAPI(strURL:strURL, method:.put, parameters: params) { value in
-                let json = JSON(value)
-                let result = json["success"].boolValue
+            if isOOTDExisting == false {
+                let strURL = "http://localhost:8000/ott/ootd/"
+                let params:Parameters = ["date":date, "image_filename":image_filename, "image_desc":"-"]
                 
-                if result {
-                    self.showResult(title: "코디 수정", message: "코디 수정 성공")
-                } else {
-                    self.showResult(title: "코디 수정", message: "코디 수정 실패")
+                callAPI(strURL:strURL, method:.post, parameters: params) { value in
+                    let json = JSON(value)
+                    let result = json["success"].boolValue
+                    
+                    if result {
+                        self.showResult(title: "코디 등록", message: "코디 등록 성공")
+                    } else {
+                        self.showResult(title: "코디 등록", message: "코디 등록 실패")
+                    }
+                }
+            } else {
+                guard let date = self.date,
+                      let date = date.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else { return }
+                
+                let strURL = "http://localhost:8000/ott/ootd/\(date)"
+                let params:Parameters = ["date":date, "image_filename":image_filename, "image_desc":"-"]
+                
+                callAPI(strURL:strURL, method:.put, parameters: params) { value in
+                    let json = JSON(value)
+                    let result = json["success"].boolValue
+                    
+                    if result {
+                        self.showResult(title: "코디 수정", message: "코디 수정 성공")
+                    } else {
+                        self.showResult(title: "코디 수정", message: "코디 수정 실패")
+                    }
                 }
             }
         }

@@ -21,6 +21,7 @@ class ClothesViewController: UIViewController, UICollectionViewDataSource, UICol
         super.viewDidLoad()
         
         self.navigationItem.rightBarButtonItem = editButtonItem
+        self.navigationItem.rightBarButtonItem?.tintColor = .black
     }
     
     override func viewWillAppear(_ animated: Bool) {
