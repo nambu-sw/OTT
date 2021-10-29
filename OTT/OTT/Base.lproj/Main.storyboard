@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -326,6 +326,31 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="496" id="6rB-bQ-aKw"/>
                                 </constraints>
+                                <stackView key="tableFooterView" opaque="NO" contentMode="scaleToFill" id="A6J-48-2Wz">
+                                    <rect key="frame" x="0.0" y="117" width="320" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LxM-Vs-p4G">
+                                            <rect key="frame" x="0.0" y="0.0" width="70" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="70" id="7f5-KL-fDk"/>
+                                            </constraints>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Add"/>
+                                            <connections>
+                                                <action selector="addCategory:" destination="C3q-Dc-bNx" eventType="touchUpInside" id="qwc-xA-dMo"/>
+                                            </connections>
+                                        </button>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Category" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fRr-Io-1ox">
+                                            <rect key="frame" x="70" y="0.0" width="250" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="127.5" id="ZUg-t0-qUY"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="NotoSerifKR-Regular" family="Noto Serif KR" pointSize="23"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                </stackView>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="50" id="UcB-OU-KJJ">
                                         <rect key="frame" x="0.0" y="44.5" width="320" height="50"/>
@@ -371,6 +396,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="fLo-al-eGV"/>
                     <connections>
+                        <outlet property="categoryTf" destination="fRr-Io-1ox" id="pdu-Jr-s8z"/>
                         <outlet property="tableView" destination="0eV-5Y-fqo" id="hIE-lg-8Mr"/>
                     </connections>
                 </viewController>
